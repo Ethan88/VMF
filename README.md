@@ -1,6 +1,6 @@
 # VMF: Voluntary Monetary Fund Project
 ##An open source system for community wealth management.
-=======
+-------------------------------------------------------------
 
 **Introduction:** In 2016, people around the world work hard and get paid in a single local currency. Often this currency is inflated by their central bank, destroying their savings and encouraging them to borrow at interest. It should be easier for people everywhere to save.
 
@@ -32,7 +32,7 @@ Based on the Tendermint protocol, a VMF can be deployed cheaply on widely-availa
 ###Impact
 Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The VMF allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. 
 
-===================
+-------------------------------------------------------------
 
 ####Components of the VMF SDK
 Tendermint blockchain running on VPS nodes (use Eris Industries tools?) Benson
