@@ -2,7 +2,7 @@
 
 The purpose of the fund is to serve as a high-return safe haven. It is modeled on the IMF’s [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, but modified to suit a different purpose: stable appreciation. This fund architecture is codified entirely in open source software; we encourage its replication. 
 
-### Actively Managed Tier (A-Tier) *Fully redeemable for USD after 7 years; transferable. *
+### Actively Managed Tier (A-Tier) is fully redeemable for USD after 7 years; transferable.
 
 <table>
   <tr>
@@ -33,7 +33,7 @@ The purpose of the fund is to serve as a high-return safe haven. It is modeled o
 </table>
 
 
-### Reserve Tier (R-Tier) *Fully redeemable for USD after 7 years; transferable. *
+### Reserve Tier (R-Tier) is fully redeemable for USD after 7 years; transferable.
 
 <table>
   <tr>
@@ -64,7 +64,7 @@ The purpose of the fund is to serve as a high-return safe haven. It is modeled o
 </table>
 
 
-### Liquid Tier (L-tier) *Fully redeemable for A-Tier or R-tier coins.*
+### Liquid Tier (L-tier) is fully redeemable for USD after 7 years; transferable.
 
 <table>
   <tr>
