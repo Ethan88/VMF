@@ -85,5 +85,5 @@ The purpose of the fund is to serve as a high-return safe haven. It is modeled o
 </table>
 
 
-Read next: Allocation and risk document
+**Read next: Allocation and risk document**
 
