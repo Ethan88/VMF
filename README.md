@@ -31,6 +31,10 @@ Based on the Tendermint protocol, a VMF can be deployed cheaply on widely-availa
 ###Impact
 Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The VMF allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. 
 
+###Bootstrapping coins into value
+* Anybody who has registered a private placement with the SEC may crowdsale their VMF in USD
+* Anyone can begin a VMF without SEC registration if they crowdsale in BTC, ETC, ETH, or other coins 
+
 #Components of the VMF SDK
 0. VMF C++ daemon (Qt client) running Tendermint on Ubuntu VPS nodes (use Eris Industries tools)
 1. Smart contract library in Solidity
@@ -43,8 +47,6 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
 * Fund managers may issue a single wallet address to another VMF
 * VMFs may interact by trading their L0 instruments only (see "Fund Composition.md" in this folder)
-* Anybody who was registered a private placement with the SEC may crowdsale their VMF in USD
-* Anyone can begin a VMF without SEC registration if they crowdsale in BTC, ETC, ETH, or other coins 
 
 **2. Smart contract library**
 * One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
