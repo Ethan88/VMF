@@ -1,7 +1,7 @@
 # VMF: Voluntary Monetary Fund Project
 ##An open source system for community wealth management.
 
-**Introduction:** In 2016, people around the world work hard and get paid in a single local currency. Often this currency is inflated by their central bank, destroying their savings and encouraging them to borrow at interest. It should be easier for people everywhere to save.
+**Introduction:** Today, working people around the world get paid in a single local currency. Often this currency is inflated by their central bank, destroying their savings and encouraging them to borrow at interest. It should be easier for people everywhere to save.
 
 The proposed solution is a cheap and simple open-source kit for a cryptographically-enabled market making fund. The returns from this fund are used to back a sound money and bootstrap a small crypto economy of less than 250 individuals.
 
