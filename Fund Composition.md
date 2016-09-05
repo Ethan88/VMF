@@ -80,7 +80,7 @@ The purpose of the fund is to serve as a high-return safe haven. It is modeled o
   <tr>
     <td>Lx...</td>
     <td>Foreign checking instrument</td>
-    <td>Holdings representing another VMF’s liquid tier coin</td>
+    <td>A wallet address issued by another VMF so as to transact in (and hold) its L0 coin.</td>
   </tr>
 </table>
 
