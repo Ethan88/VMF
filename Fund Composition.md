@@ -64,7 +64,7 @@ The purpose of the fund is to serve as a high-return safe haven. It is modeled o
 </table>
 
 
-### Liquid Tier (L-tier) is fully redeemable for USD after 7 years; transferable.
+### Liquid Tier (L-tier) is fully redeemable for A-Tier or R-Tier coins; transferable.
 
 <table>
   <tr>
