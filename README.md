@@ -32,10 +32,11 @@ Based on the Tendermint protocol, a VMF can be deployed cheaply on widely-availa
 Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The VMF allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. 
 
 ####Components of the VMF SDK
--Tendermint blockchain running on VPS nodes (use Eris Industries tools?) Benson
--Smart contract library Chris D.
--Wallet mobile application (iOS/Android) C. White / Frederico
--Documentation (legal and technical) Chris
+#####VMF C++ daemon (Qt client) running Tendermint on Ubuntu VPS nodes (use Eris Industries tools)
+#####Smart contract library in Solidity
+#####Wallet mobile application (iOS/Android)
+#####Desktop application (Mac/Windows/Linux)
+#####Documentation (legal and technical)
 
 **1. Community-oriented blockchain**
 -Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
