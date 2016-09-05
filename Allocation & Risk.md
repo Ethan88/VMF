@@ -122,7 +122,3 @@ The maximum size of a VMF is hard-coded at 250 wallet addresses, with a coin iss
     <td>0</td>
   </tr>
 </table>
-
-
-*Read next: Operations&Security.md document*
-
