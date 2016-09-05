@@ -43,7 +43,8 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
 * Fund managers may issue a single wallet address to another VMF
 * VMFs may interact by trading their L0 instruments only (see "Fund Composition.md" in this folder)
-* Any fund manager may host their own instance of a VMF
+* Anybody who was registered a private placement with the SEC may crowdsale their VMF in USD
+* Anyone can begin a VMF without SEC registration if they crowdsale in BTC, ETC, ETH, or other coins 
 
 **2. Smart contract library**
 * One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
