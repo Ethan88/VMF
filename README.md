@@ -1,5 +1,5 @@
-# VMF
-##Voluntary Monetary Fund: an open source system for community wealth management.
+# VMF: Voluntary Monetary Fund Project
+##An open source system for community wealth management.
 =======
 
 **Introduction:** In 2016, people around the world work hard and get paid in a single local currency. Often this currency is inflated by their central bank, destroying their savings and encouraging them to borrow at interest. It should be easier for people everywhere to save.
