@@ -4,7 +4,7 @@ While fungible and often limited in issuance, some so-called cryptocurrencies be
 
 But risk remains, so we allow i2 investors to choose how their money is deployed. Each layer of the fund has a different risk-reward profile. Each tier has a coin that represents it. Investors may allocate their money to whatever tiers or combination of tiers they like, but not all tiers have equal inventory available for sale. Holding the digital cash instrument L0 or Lx is equivalent to holding all the underlying coins in the same proportion as the overall issuance, because they are redeemable instruments (like gold-backed paper notes). 
 
-The maximum size of a VMF is hard-coded at 250 wallet addresses, with a coin issuance size of **4,000 coins**. Our coins are sold at **$25,000 USD **each, with no discounts or giveaways, but a given VMF may price their coins at any opening price they see fit. 
+The maximum size of a VMF is hard-coded at 250 wallet addresses, with a coin issuance size of **4,000 coins**. Our coins are sold at **$25,000 USD** each, with no discounts or giveaways, but a given VMF may price their coins at any opening price they see fit. 
 
 ### Performance (Managed) Tiers equal 66 percent of the fund
 
