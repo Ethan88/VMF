@@ -32,36 +32,36 @@ Based on the Tendermint protocol, a VMF can be deployed cheaply on widely-availa
 Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The VMF allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. 
 
 ####Components of the VMF SDK
-Tendermint blockchain running on VPS nodes (use Eris Industries tools?) Benson
-Smart contract library Chris D.
-Wallet mobile application (iOS/Android) C. White / Frederico
-Documentation (legal and technical) Chris
+-Tendermint blockchain running on VPS nodes (use Eris Industries tools?) Benson
+-Smart contract library Chris D.
+-Wallet mobile application (iOS/Android) C. White / Frederico
+-Documentation (legal and technical) Chris
 
 **1. Community-oriented blockchain**
-Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
-Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
-Fund managers may issue a single wallet address to another VMF
-VMFs may interact by trading their L0 instruments only
-Any fund manager may host their own instance of a VMF
+-Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
+-Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
+-Fund managers may issue a single wallet address to another VMF
+-VMFs may interact by trading their L0 instruments only
+-Any fund manager may host their own instance of a VMF
 
 **2. Smart contract library**
-One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
-Issuance of new wallet addresses to new member-investors
-A-tier and R-tier transfer contracts for converting coins between tiers 
-Brokerage contract for supervised A-tier / R-tier transfers between members
-Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
+-One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
+-Issuance of new wallet addresses to new member-investors
+-A-tier and R-tier transfer contracts for converting coins between tiers 
+-Brokerage contract for supervised A-tier / R-tier transfers between members
+-Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
 
 **3. End-user wallet mobile application**
-User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
-User can see a dashboard for all his or her VMFs, and their performance
-User can see blockchain explorer for each VMF they’re a member of
-Twitter-style chat forum for each VMF on its own blockchain (we could use this project)
-GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
+-User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
+-User can see a dashboard for all his or her VMFs, and their performance
+-User can see blockchain explorer for each VMF they’re a member of
+-Twitter-style chat forum for each VMF on its own blockchain (we could use this project)
+-GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of -common contracts)
 
 **4. Documentation T.B.D.**
-Boilerplate private placement
-Partner agreement
-Legal Instructions
-Technical deployment documents
+-Boilerplate private placement
+-Partner agreement
+-Legal Instructions
+-Technical deployment documents
 
 *Read next: Fund Composition document*
