@@ -3,9 +3,9 @@
 
 **Introduction:** Today, working people around the world get paid in a single local currency. All to often this currency is inflated by their central bank for political ends, destroying the savings of the middle class and encouraging them to borrow at interest. It should be easier for people everywhere to save.
 
-The proposed solution is a cheap and simple open-source kit for a cryptographically-enabled market making fund. The returns from this fund are used to back a sound money and bootstrap a small crypto economy of less than 250 individuals.
+The proposed solution is a cheap and simple open-source kit for a cryptographically-enabled market making fund. This fund is not architected to scale to city- or state-size, but rather is intended to support a small community hard-coded to a limit of 250 individuals. The returns from this fund are used to back a local currency which appreciates to reflect the performance of fund management. This stable currency pool then comes the building block of a micro-economy where people can safely shelter, grow, and use earnings gained from working in the "mainstream" economy. 
 
-This project is designed to be deployable by anyone with command-line experience, cloud servers, and a little financial know-how.  At first, we expect will be run by existing local officials, community leaders, and bankers on behalf of friends and family. Eventually amateurs may rise through the rank, creating an active “staking” market wherein smaller fund managers stake their lots with top fund managers.
+The VMF project is designed to be deployable by anyone with command-line experience, cloud servers, and a little financial know-how.  At first, we expect will be run by existing local officials, community leaders, and bankers on behalf of friends and family. Eventually amateurs may rise through the ranks and gain notoriety for their performance, creating an active “staking” market wherein smaller fund managers stake their lots with top fund managers.
 
 ###Project Goals
 This library will enable anyone with basic web development skills to spin up a cheap, simple, and low-maintenance crypto-economic wealth management / market-making fund that can help a community save and grow their money. 
