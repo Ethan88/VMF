@@ -51,7 +51,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 2. Wallet mobile application (iOS/Android)
 3. Desktop application (Mac/Windows/Linux)
 
-**1. Full Node Daemon (Nickname "Flux node")** // Sept-Nov 2016
+**1. Full node daemon (Nickname "Flux node")** // Sept-Nov 2016
 * Compile from source
 * Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
 * Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
