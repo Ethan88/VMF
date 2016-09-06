@@ -28,7 +28,7 @@ The purpose of the fund is to serve as a high-return safe haven. It is modeled o
   <tr>
     <td>A3</td>
     <td>Commercial Operations</td>
-    <td>Mining; partnerships; startup equity; automated services</td>
+    <td>Mining; partnerships; startup equity; custom smart contracts; automated services</td>
   </tr>
 </table>
 
