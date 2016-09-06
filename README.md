@@ -1,4 +1,4 @@
-# VMF: Voluntary Monetary Fund Project
+# VMF: Voluntary Monetary Fund
 ##Crypto-economy in a box for you and [Dunbar's Number] of your friends.
 ###Things you'll need before you enrich yourself and your community: 
 * one (1) entry-level coder
