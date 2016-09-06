@@ -2,11 +2,6 @@
 
 From an investor perspective, the purpose of a VMF fund is to serve as a high-return safe haven. VMF structure is loosely modeled on the IMF’s [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, but modified to suit a different purpose: stable appreciation, rather than just stability. This creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. This fund architecture is codified entirely in open source software; transparency in all ways is what makes this whole thing work, hence the blockchain (immutability as a backstop for fund managers). 
 
-###Important Legal & Logistical Notes
-* In a privately-placed VMF, the Actively Managed Tier (A-Tier) is fully redeemable for USD after ~10 years
-* Holders of A- and R-tier coins may sell them to other member-investors, brokered by the fund managers
-* In a "public" (crypto-crowdsale) VMF, fund managers may choose their own lockup period, after which A- and R-tier coins will be made redeemable in one of the underlying crypto-assets (eg., ether or bitcoin).
-
 <table>
   <tr>
     <td>Coin</td>
@@ -85,6 +80,11 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
     <td>A wallet address issued by another VMF so as to transact in (and hold) its L0 coin.</td>
   </tr>
 </table>
+
+###Important Legal & Logistical Notes
+* In a privately-placed VMF, the Actively Managed Tier (A-Tier) is fully redeemable for USD after ~10 years
+* Holders of A- and R-tier coins may sell them to other member-investors, brokered by the fund managers
+* In a "public" (crypto-crowdsale) VMF, fund managers may choose their own lockup period, after which A- and R-tier coins will be made redeemable in one of the underlying crypto-assets (eg., ether or bitcoin).
 
 
 *Read next: Allocation and risk document*
