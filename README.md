@@ -24,7 +24,7 @@ Many cryptocurrency maximalists have attempted to build “trustless” global s
 The VMF concept proposes a community monetary fund which uses financial and social incentives, as well as immutable ledgers, to keep members honest.
 
 ###How it works
-The VMF has one basic purpose: to incorporate citizens in the VMF by issuing them a wallet address. This is the primary responsibility of the managers of a given VMF: to choose who can be in the VMF. VMFs don’t necessarily expire, but i2’s first deployment will end after 7 years. The length, size, scope, and investors in a given VMF will need to comply with local laws when deploying our project. (Our fund is a private placement regulated under US SEC Regulation D.)
+The VMF has one basic purpose: to incorporate citizens in the VMF by issuing them a wallet address. This is the primary responsibility of the managers of a given VMF: to choose who can be in the VMF. VMFs don’t necessarily expire, but i2’s first deployment will end after 7 years.
 
 ###Management powers
 In addition to admitting members, the managers are in charge of active management of their portfolio. They are incentivized to hold and grow the value of the coins they issue in various ways. Fund managers may trade coins with another VMF community on behalf of their members out of a common pool by incorporating another VMF as a citizen (ie., issuing an outside VMF group a single wallet address). However, when inside a VMF it is strictly a one-person, one-wallet address system.
@@ -38,9 +38,10 @@ When joining a VMF, think of the TSA rules: never let a stranger pack your finan
 ###Impact
 Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The VMF allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. 
 
-###Bootstrapping coins into value
-* Anybody who has registered a private placement with the SEC may crowdsale their VMF in USD
-* Anyone can begin a VMF without SEC registration if they crowdsale in BTC, ETC, ETH, or other coins 
+###Crowdfunding your VMF
+* In the Untied States, anybody who has registered a private placement with the SEC under regulation D may crowdsale their VMF in USD from accredited investors (ie., what we did)
+* Anyone can begin a VMF without SEC registration if they riase crowdsale funds paid in BTC, ETC, ETH, or other coins
+* Be sure to comply with local laws when deploying our project outside the US
 
 #Components
 0. Full node daemon running Tendermint, to be used on Ubuntu VPS nodes (with Eris Industries tools)
