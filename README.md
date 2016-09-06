@@ -48,28 +48,29 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 2. Wallet mobile application (iOS/Android)
 3. Desktop application (Mac/Windows/Linux)
 
-**1. C++ Full Node Daemon (Nickname "Flux node")**
+**1. C++ Full Node Daemon (Nickname "Flux node")** // Sept-Nov 2016
+* Compile from source
 * Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
 * Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
 * Fund managers may issue a single wallet address to another VMF
 * VMFs may interact by trading their L0 instruments only (see "Fund Composition.md" in this folder)
 
-**2. Smart contract library (Nickname: "Flux services")**
+**2. Smart contract library (Nickname: "Flux services")** // Sept - Nov 2016
 * One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
 * Issuance of new wallet addresses to new member-investors
 * A-tier and R-tier transfer contracts for converting coins between tiers 
 * Brokerage contract for supervised A-tier / R-tier transfers between members
 * Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
 
-**3. End-user wallet mobile application (Nickname: "Flux wallet")**
+**3. End-user wallet mobile application (Nickname: "Flux wallet")** // Nov 2016 - March 2017
 * Runs a full node on a smartphone
 * User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
 * User can see a dashboard for all his or her VMFs, and their performance
 * User can see blockchain explorer for each VMF they’re a member of
-* Twitter-style chat forum for each VMF on its own blockchain (we could use this project)
+* Twitter-style chat forum for each VMF on its own blockchain (we could use the EthTweet project)
 * GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
 
-**4. Full GUI node for Mac/Win/Linux (Nickname: "Flux Trade")**
+**4. Full GUI node for Mac/Win/Linux (Nickname: "Flux Trade")** // June 2017
 * All the same features as the mobile wallet
 * Runs a full node
 * Contains trading, management, and administration interface
