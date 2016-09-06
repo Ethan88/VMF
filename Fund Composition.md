@@ -84,7 +84,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
 ###Important Legal & Logistical Notes
 * In a privately-placed VMF, the Actively Managed Tier (A-Tier) is fully redeemable for USD after ~10 years
 * Member-investors holding A- and R-tier coins may sell them to other member-investors, brokered by the fund managers
-* In a "public" (crypto-crowdsale) VMF, fund managers may choose their own lockup period, after which A- and R-tier coins will be made redeemable in one of the underlying crypto-assets (eg., ether or bitcoin).
+* In a "public" (crypto-crowdsale) VMF, fund managers may choose their own lockup period, after which A- and R-tier coins would presumably be made redeemable in one of the underlying crypto-assets (eg., ether or bitcoin).
 
 
 *Read next: Allocation and risk document*
