@@ -77,6 +77,6 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Technical deployment documents
 
 **5. Desktop Application (Mac/Win/Linux)**
-* Same as Qt daemon but with a front end
+* Same spec as mobile
 
 *Read next: Fund Composition document*
