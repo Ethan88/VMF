@@ -42,7 +42,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Anybody who has registered a private placement with the SEC may crowdsale their VMF in USD
 * Anyone can begin a VMF without SEC registration if they crowdsale in BTC, ETC, ETH, or other coins 
 
-#Components of the SDK
+#Components
 0. Full node daemon running Tendermint, to be used on Ubuntu VPS nodes (with Eris Industries tools)
 1. Smart contract library in Solidity
 2. Wallet mobile application (iOS/Android)
