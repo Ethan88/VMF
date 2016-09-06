@@ -1,11 +1,11 @@
 #Voluntary Monetary Fund
 ##A cheap, sustainable crypto-economy in a box for you and [Dunbar's Number] of your friends.
 ###By the time this project is done, anyone on Earth will only need a few things to enrich their community: 
-* one (1) entry-level coder
-* one (1) professional asset manager
+* one (1) entry-level coder to deploy the project
+* one or two (1-2) professional asset managers to run it
 * several cheap cloud VPSs to get started
-* some friends and family with money (and smartphones)
-* the trust and confidence of their member-investors
+* some friends and family with money (and smartphones) to join
+* the trust and confidence of these people
 
 **Introduction:** Today, working people around the world get paid in a single local currency. All too often, this currency is inflated by their central bank for political ends, destroying the savings of the middle class, putting small business goods on a never-ending price-hike against corporate goods, and encouraging people to borrow even at punitive rates of interest. It should be easier for people everywhere to save the hard-earned value of their work product.
 
