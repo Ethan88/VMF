@@ -63,7 +63,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Brokerage contract for supervised A-tier / R-tier transfers between members
 * Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
 
-**3. End-user wallet mobile application (Nickname: "Flux wallet")** // Nov 2016 - March 2017
+**3. Member wallet mobile application (Nickname: "Flux wallet")** // Nov 2016 - March 2017
 * Runs a full node on a smartphone
 * User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
 * User can see a dashboard for all his or her VMFs, and their performance
