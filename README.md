@@ -1,6 +1,6 @@
 # VMF: Voluntary Monetary Fund
 ##Cheap, sustainable crypto-economy in a box for you and [Dunbar's Number] of your friends.
-###By the time this project is done, anyone on Earth will only need a few things to enrich yourself and your community: 
+###By the time this project is done, anyone on Earth will only need a few things to enrich their community: 
 * one (1) entry-level coder
 * one (1) professional asset manager
 * several cheap cloud VPSs to get started
