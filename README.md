@@ -1,5 +1,5 @@
-#Voluntary Monetary Fund
-##A cheap, sustainable crypto-economy in a box for you and [Dunbar's Number] of your friends.
+#Voluntary Monetary Fund: a platform for new banks and funds
+Launch a bank or investment fund with just a few lines of code. Build a cheap, sustainable crypto-economy on top of your fund, for you and Dunbar's Number of your friends. Trade investment products with other micro-economies. 
 ###By the time this project is done, anyone on Earth will only need a few things to enrich their community: 
 * one (1) entry-level coder to deploy the project
 * one or two (1-2) professional asset managers to run it
