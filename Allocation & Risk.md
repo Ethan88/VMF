@@ -16,8 +16,8 @@ At i2, our coins are sold at **$25,000 USD** each, with no discounts or giveaway
   <tr>
     <td>Coin</td>
     <td>Proportion of issuance</td>
-    <td>Number of coins minted</td>
-    <td>Number rendered (9.2016)</td>
+    <td>Number of coins i2 chose to mint</td>
+    <td>Number sold (as of 9.2016)</td>
     <td>Layer Description</td>
     <td>Risk Profile</td>
     <td>Returns</td>
