@@ -47,22 +47,21 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 1. Smart contract library in Solidity
 2. Wallet mobile application (iOS/Android)
 3. Desktop application (Mac/Windows/Linux)
-4. Documentation (legal and technical)
 
-**1. C++ Daemon**
+**1. C++ Full Node Daemon (Nickname "Flux node")**
 * Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
 * Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
 * Fund managers may issue a single wallet address to another VMF
 * VMFs may interact by trading their L0 instruments only (see "Fund Composition.md" in this folder)
 
-**2. Smart contract library**
+**2. Smart contract library (Nickname: "Flux services")**
 * One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
 * Issuance of new wallet addresses to new member-investors
 * A-tier and R-tier transfer contracts for converting coins between tiers 
 * Brokerage contract for supervised A-tier / R-tier transfers between members
 * Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
 
-**3. End-user wallet mobile application**
+**3. End-user wallet mobile application (Nickname: "Flux wallet")**
 * Runs a full node on a smartphone
 * User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
 * User can see a dashboard for all his or her VMFs, and their performance
@@ -70,14 +69,11 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Twitter-style chat forum for each VMF on its own blockchain (we could use this project)
 * GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
 
-**4. Documentation T.B.D.**
-* Boilerplate private placement
-* Partner agreement
-* Legal Instructions
-* Technical deployment documents
-
-**5. Desktop Application (Mac/Win/Linux)**
-* Same spec as mobile
+**4. Full GUI node for Mac/Win/Linux (Nickname: "Flux Trade")**
+* All the same features as the mobile wallet
+* Runs a full node
+* Contains trading, management, and administration interface
+* Begin your own VMF from this desktop application
 
 # I2 Product Matrix
 
