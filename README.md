@@ -33,7 +33,7 @@ In addition to admitting members, the managers are in charge of active managemen
 Based on the Tendermint protocol, a VMF can be deployed cheaply on widely-available cloud VPSs or local machines. All VMFs use the same open source mobile wallet application, but a given fund manager could make a custom wallet if they choose. 
 
 ###Trust
-When joining a VMF, think of the TSA rules: never let a stranger pack your financial bags. Entering a VMF means you're entrusting that cryptocurrency to a human manager who will have freedom to invest as they see fit. If his or her skills as a market-maker are sub-par investment strategists in the mainstream economy, a VMF will simply lose their money faster. However, with a trained investment professional and an entry-level coder combine, the effect for the VMF members will be stellar.  
+When joining a VMF, think of the TSA rules: never let a stranger pack your financial bags. Entering a VMF means you're entrusting that cryptocurrency to a human manager who will have freedom to invest as they see fit. If his or her skills as a market-maker are sub-par in the mainstream economy, a VMF will simply lose their money faster. However, with a trained investment professional and an entry-level coder combine, the effect for the VMF members will be stellar.  
 
 ###Impact
 Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The VMF allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. 
