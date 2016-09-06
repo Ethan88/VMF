@@ -60,6 +60,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
 
 **3. End-user wallet mobile application**
+* Runs a full node on a smartphone
 * User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
 * User can see a dashboard for all his or her VMFs, and their performance
 * User can see blockchain explorer for each VMF they’re a member of
