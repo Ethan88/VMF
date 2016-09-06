@@ -74,9 +74,10 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
 
 **4. Full GUI node for Mac/Win/Linux (Nickname: "Flux trade"; screenshots of web version in repo)** // June 2017
-* All the same features as the mobile wallet
-* Runs a full node
-* Contains trading, management, and administration interface
-* Begin your own VMF from this desktop application
+* Currently a working web-based prototype with just the trading interface
+* Will have same features as the mobile wallet
+* Will also runs a full node
+* Contains existing trading interface, plus coin inventory management, blockchain explorer, and issuances interface
+* In sum, user can launch and manage his own VMF from this desktop application
 
 *Read next: Fund Composition document*
