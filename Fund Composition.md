@@ -1,6 +1,6 @@
 # Fund Composition
 
-The purpose of the fund is to serve as a high-return safe haven. It is modeled on the IMF’s [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, but modified to suit a different purpose: stable appreciation. This fund architecture is codified entirely in open source software; we encourage its replication. 
+From an investor perspective, the purpose of a VMF fund is to serve as a high-return safe haven. VMF structure is loosely modeled on the IMF’s [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, but modified to suit a different purpose: stable appreciation, rather than just stability. This creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. This fund architecture is codified entirely in open source software; blockchain-powered transparency is what makes this whole thing work. 
 
 ### Actively Managed Tier (A-Tier) is fully redeemable for USD after 7 years; transferable.
 
