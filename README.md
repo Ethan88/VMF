@@ -1,6 +1,6 @@
 # VMF: Voluntary Monetary Fund Project
 ##Crypto-economy in a box for you and [Dunbar's Number] of your friends.
-###Ingredients to build: One entry-level coder; one professional asset manager.
+###Things you'll need: one (1) entry-level coder; one (1) professional asset manager; a cloud VPS
 
 **Introduction:** Today, working people around the world get paid in a single local currency. All too often, this currency is inflated by their central bank for political ends, destroying the savings of the middle class and encouraging them to borrow at interest. It should be easier for people everywhere to save.
 
