@@ -10,7 +10,9 @@ Holding the digital cash instrument L0 or Lx is equivalent to holding all the un
 
 At i2, our coins are sold at **$25,000 USD** each, with no discounts or giveaways, but a given VMF may price their coins at any opening price they see fit. 
 
-### Performance (Managed) Tiers equal 66 percent of the fund
+### Performance (Managed) Tiers are hard-coded to a total pool of 66 percent for every VMF.
+
+##The i2 Coin Issuance As Sample
 
 <table>
   <tr>
