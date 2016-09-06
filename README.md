@@ -73,7 +73,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Twitter-style chat forum for each VMF on its own blockchain (we could use the EthTweet project)
 * GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
 
-**4. Full GUI node for Mac/Win/Linux (Nickname: "Flux Trade")** // June 2017
+**4. Full GUI node for Mac/Win/Linux (Nickname: "Flux trade"; screenshots of web version in repo)** // June 2017
 * All the same features as the mobile wallet
 * Runs a full node
 * Contains trading, management, and administration interface
