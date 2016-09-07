@@ -60,7 +60,6 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 
 **2. Smart contract library (Nickname: "Flux services")** // Sept - Nov 2016
 * One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
-* Issuance of new wallet addresses to new member-investors
 * A-tier and R-tier transfer contracts for converting coins between tiers 
 * Brokerage contract for supervised A-tier / R-tier transfers between members
 * Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
@@ -71,6 +70,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * User can see a dashboard for all his or her VMFs, and their performance
 * User can see blockchain explorer for each VMF they’re a member of
 * User can use P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
+* User can enter a chat room with other VMF members (use ethTweet?)
 
 **4. Full GUI node for Web/Mac/Win/Linux (Nickname: "Flux trade"; screenshots of web version in repo)** // June 2017
 * As of 9/16 we have web-based prototype with trading interface
