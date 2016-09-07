@@ -71,8 +71,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
 * User can see a dashboard for all his or her VMFs, and their performance
 * User can see blockchain explorer for each VMF they’re a member of
-* Twitter-style chat forum for each VMF on its own blockchain (we could use the EthTweet project)
-* GUI for using P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
+* User can use P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
 
 **4. Full GUI node for Mac/Win/Linux (Nickname: "Flux trade"; screenshots of web version in repo)** // June 2017
 * Currently a working web-based prototype with just the trading interface
