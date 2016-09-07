@@ -50,7 +50,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 0. Full node daemon running Tendermint, to be used on Ubuntu VPS nodes (with Eris Industries tools)
 1. Smart contract library in Solidity
 2. Wallet mobile application (iOS/Android)
-3. Desktop application (Mac/Windows/Linux)
+3. Web app / desktop application (Mac/Windows/Linux)
 
 **1. Full node daemon (Nickname "Flux node")** // Sept-Nov 2016
 * Compile from source
@@ -73,10 +73,10 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * User can see blockchain explorer for each VMF they’re a member of
 * User can use P2P banking contracts between members (may include escrow, layaway, collateralized loans, and other types of common contracts)
 
-**4. Full GUI node for Mac/Win/Linux (Nickname: "Flux trade"; screenshots of web version in repo)** // June 2017
-* Currently a working web-based prototype with just the trading interface
+**4. Full GUI node for Web/Mac/Win/Linux (Nickname: "Flux trade"; screenshots of web version in repo)** // June 2017
+* As of 9/16 we have web-based prototype with trading interface
 * Will have same features as the mobile wallet
-* Will also runs a full node
+* Will also run a full node
 * Contains existing trading interface, plus coin inventory management, blockchain explorer, and issuances interface
 * In sum, user can launch and manage his own VMF from this desktop application
 
