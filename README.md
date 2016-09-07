@@ -57,7 +57,6 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 * Private chain w/ hard-coded limit to 250 wallet addresses (ie., limit of Dunbar’s Number)
 * Fund managers may issue one wallet address per member (ie., a “passport-wallet”)
 * Fund managers may issue a single wallet address to another VMF
-* VMFs may interact by trading their L0 instruments only (see "Fund Composition.md" in this folder)
 
 **2. Smart contract library (Nickname: "Flux services")** // Sept - Nov 2016
 * One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
