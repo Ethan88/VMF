@@ -5,13 +5,13 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
 <table>
   <tr>
     <td>Coin</td>
-    <td>What activity gives it value</td>
-    <td>Where i2 allocates</td>
+    <td>Activity</td>
+    <td>What i2 does</td>
   </tr>
   <tr>
     <td>A0</td>
     <td>Trading</td>
-    <td>ETH, BTC, LTC, ETC</td>
+    <td>Day trade ETH, BTC, LTC, ETC</td>
   </tr>
   <tr>
     <td>A1</td>
@@ -20,7 +20,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
   </tr>
   <tr>
     <td>A2</td>
-    <td>Accumulation</td>
+    <td>Accumulation of Equities</td>
     <td>SIA, WAVES, GRID, ZCASH, AMP, MYCELIUM, IO, FACT, MKR, LSK, STORJ, XCP, DECRED, LTC, NXT, NIRO</td>
   </tr>
   <tr>
@@ -45,7 +45,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
   </tr>
   <tr>
     <td>R1</td>
-    <td>Staking Nodes</td>
+    <td>Staking</td>
     <td>DASH, DECRED</td>
   </tr>
   <tr>
