@@ -40,7 +40,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
   </tr>
   <tr>
     <td>R0</td>
-    <td>Long crypto positions</td>
+    <td>Long positions</td>
     <td>XMR, LBRY, BTC</td>
   </tr>
   <tr>
