@@ -5,8 +5,8 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
 <table>
   <tr>
     <td>Coin</td>
-    <td>Activity</td>
-    <td>What i2 does</td>
+    <td>Generic activity coin represents</td>
+    <td>Specifics chosen by i2</td>
   </tr>
   <tr>
     <td>A0</td>
@@ -20,7 +20,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
   </tr>
   <tr>
     <td>A2</td>
-    <td>Accumulation of Equities</td>
+    <td>Accumulation</td>
     <td>SIA, WAVES, GRID, ZCASH, AMP, MYCELIUM, IO, FACT, MKR, LSK, STORJ, XCP, DECRED, LTC, NXT, NIRO</td>
   </tr>
   <tr>
