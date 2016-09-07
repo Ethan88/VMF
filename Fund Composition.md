@@ -10,7 +10,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
   </tr>
   <tr>
     <td>A0</td>
-    <td>Day Trading</td>
+    <td>Trading</td>
     <td>ETH, BTC, LTC, ETC</td>
   </tr>
   <tr>
@@ -20,7 +20,7 @@ From an investor perspective, the purpose of a VMF fund is to serve as a high-re
   </tr>
   <tr>
     <td>A2</td>
-    <td>Accumulation & Interval Trading</td>
+    <td>Accumulation</td>
     <td>SIA, WAVES, GRID, ZCASH, AMP, MYCELIUM, IO, FACT, MKR, LSK, STORJ, XCP, DECRED, LTC, NXT, NIRO</td>
   </tr>
   <tr>
