@@ -43,7 +43,7 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 
 ###Crowdfunding your VMF
 * In the Untied States, anybody who has registered a private placement with the SEC under regulation D may crowdsale their VMF in USD from accredited investors (ie., what we did). *With this option, your investors may not withdraw their funds for the length of the fund, which for us is 7-10 years.*
-* Anyone can begin a VMF without SEC registration if they riase crowdsale funds paid in BTC, ETC, ETH, or other coins. *The competition amongst unlicensed VMFs will be especially sharp with zero investor lockup!*
+* Anyone can begin a VMF without SEC registration if they raise crowdsale funds paid in BTC, ETC, ETH, or other coins. *The competition amongst unlicensed VMFs will be especially sharp with zero investor lockup!*
 * Be sure to comply with local laws when deploying our project outside the US
 
 #Components
