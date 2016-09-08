@@ -1,4 +1,5 @@
-#Voluntary Monetary Fund: a platform for transparent investment funds
+#Voluntary Monetary Fund
+##Open source platform for transparent investment vehicles
 Launch a transparent blockchain-based investment fund in just a few lines of code.
 ###What you'll need:
 * one (1) entry-level coder to deploy the project
