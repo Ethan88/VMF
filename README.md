@@ -25,7 +25,7 @@ Architected with private business in mind, this system has no governance apparat
 ###Approach
 Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away.”
 
-The VMF concept proposes a three-level hierarchy: the central bank, the funds, and the member-investors of those funds. In sum, this network is a community monetary "fund of funds" which uses financial and social incentives, as well as immutable ledgers, to keep members and managers honest, and to grow everyone's wealth sustainably.
+The VMF concept proposes a three-level hierarchy: the central bank, the funds, and the member-investors of those funds. In sum, this network is a community monetary "fund of funds" which uses financial and social incentives, as well as immutable ledgers, to keep members and managers honest, and to grow everyone's wealth.
 
 ###How it works
 The Central Bank has one job: get good Fund Managers on the platform. The Fund Manager, in turn, has one basic job: to incorporate wealthy and honest citizens into their Fund by issuing them a wallet address. This is the primary responsibility of the managers of a given Fund: to choose who can be in it. Secondarily, they manage the money of those who enter the Fund, and try to grow its value in various ways.
@@ -37,16 +37,43 @@ In addition to admitting members, the managers are in charge of active managemen
 When joining a Fund, think of the TSA rules: never let a stranger pack your financial bags. Entering a VMF means you're entrusting value to a human manager who will have freedom to invest as they see fit. If his or her skills as a market-maker are sub-par in the mainstream economy, a Fund will simply lose their money faster. This is a kit for knowledgeable asset managers.
 
 ###Impact
-Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The Fund model allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. More importantly, it allows brands, schools, non-profits, and other small organizations to offer safe, cheap, and transparent financial services to their members.
+Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The Fund model allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. **More importantly, it allows brands, schools, non-profits, developing governments, and other small organizations to offer safe, cheap, and transparent financial services to their members.**
 
-###Crowdfunding your Fund
+#The Central Bank
+VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, and its XDR instrument. The model has been modified to suit a different purpose: stable appreciation, rather than just *prima facie* stability. This new model creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain (ie., immutability as a backstop for fund managers). We believe it is the ultimate safe haven network. 
+
+## Elements of the Central Bank role versus Fund Manager role
+* Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
+* It also has its own LX coin representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund.
+* The central bank holds a stake pool equaling at least $10,000 USD or 10 percent of each fund's AUM. This covers LX and Lisa positions.
+
+## The Fund LX Exchange Contract
+* All funds in a VMF, including the central bank, have their own LX Exchange Contract address. 
+* This contract address receives A/R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the `tx.sender` to use. This may be to send LX to other member-investors, or for Funds to send other funds their LX coins in exchange for some underlying asset. Another common use will be in the contract below. 
+
+## The Lisa Exchange Contract 
+At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, or the central bank's LX. Both funds and the central bank must put up 100 percent collateral in R-tier coins when using the LX contract to borrow Lisa and put those coins into circulation
+  * This exchange contract address is available to the entire Lisa chain, even the central bank itself
+  * Upon receiving LX from any one of the 250 funds in its network, this contract sends back a request for 100 percent (+/-1) in R-tier coins
+  * The user must reply by sending that amount of R-tier coins as collateral; both the R-tier collateral and the LX coins are held in escrow by the contract
+  * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
+   * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
+
+## Limits on Outstanding LX and Lisa
+A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
+
+Should the value of voth the R-tier coins and the LX coins stay below 10 percent of earlier value for more than 96 hours, then the LX and R-tier coins being held in the LX Exchange Contract are joined in escrow by the equivalent amount of ETH from the stake pool. This situation remains, marked to market every 24 hours, until the value of the underlying LX and R-tier asset returns.
+
+For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in the stake contract.
+
+###Crowdfunding a new Fund on a VMF platform
 * In the Untied States, anybody who has registered a private placement with the SEC under regulation D may crowdsale their VMF in USD from accredited investors (ie., what we did). *With this option, your investors may not withdraw their funds for the length of the fund, essentially behaving like a market-linked certificate of deposit.*
 * Anyone can begin a VMF without SEC registration if they raise crowdsale funds paid in BTC, ETC, ETH, or other coins. *The competition amongst unlicensed VMFs will be especially sharp with zero investor lockup!*
 * Be sure to comply with local laws when deploying this project outside the US.
 
 #Software components
 0. Central bank node daemon overseeing a VMF network (it has admin/root permissions)
-1. Fund node daemon which can instantiate and administer a child Fund (roll our own with Eris Industries tools)
+1. Fund node daemon which can instantiate and administer a child Fund (we're rolling our own with Eris Industries tools)
 2. Wallet mobile application (iOS/Android)
 3. Fund management web interface that our central bank, i2, built for our particular VMF (Flux Trade)
  
@@ -59,7 +86,7 @@ This CLI node can be deployed on a **Docker instance** (required for ErisDB) and
 
 ###Creating a fund
 Once connected to the network, the CLI node allows fund administrators to setup their fund as follows:
-* New fund manager can use the CLI to instantiate a new wallet address on the liquid-tier chain (nickname: Lisa chain) which is shared by all funds. Anyone on earth may obtain a Lisa wallet address with the Flux mobile app. 
+* New fund manager can use the CLI to instantiate a new wallet address on the liquid-tier chain (nickname: Lisa chain) which is the chain shared by all funds. (Anyone on Earth may obtain a Lisa wallet address with the Flux mobile app.)
   * Next, the fund manager must enter his information. This Lisa address will turn into a Fund Manager object containing attributes: six ethereum addresses from an existing Mist wallet, labeled for the six actively managed tiers A0, A1, A2, R, R0, and R1; full legal name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL
   * Fund manager must then create a password
   * Fund manager must enable two-factor phone number authentication (use Eth proof of phone project?)
@@ -168,8 +195,8 @@ Reserve Tier coins **must equal at least 34 percent** of total coin issuance
     <td>Risk Profile</td>
   </tr>
   <tr>
-    <td>Lx0...</td>
-    <td>Stable-coin specific to this fund, and redeemable for the above tiers. Gets its value from the sum total basket average. Value shown in Lisa.</td>
+    <td>LX</td>
+    <td>Stable-coin specific to this fund, and redeemable for the above tiers. Gets its value from the sum total basket average. Value shown in Lisa/XDR.</td>
     <td>Risk average of entire fund</td>
   </tr>
   <tr>
@@ -180,7 +207,7 @@ Reserve Tier coins **must equal at least 34 percent** of total coin issuance
 </table>
 
 ####Note on fungibility
-Funds cannot exchange A0, A1, A2, R, R0, and R1 coins with one another. Because each fund's chain is not connected to any other, the only way that funds may do business is by trading their Lx0... instrument for a Lisa coin, and then doing a transacton in Lisa. The Lisa coin is the lingua franca in a given VMF platform network, and its value is pegged to the XDR; thus 100 lisa = 100 xdr. Central banks may not do business with one another except by trading with each other in underlying assets. **Lisa chains are not connected.**
+Funds cannot exchange A0, A1, A2, R, R0, and R1 coins with one another. Because each fund's chain is not connected to any other, the only way that funds may do business is by trading their LX instrument for a Lisa coin, and then doing a transacton in Lisa. The Lisa coin is the lingua franca in a given VMF platform network, and its value is pegged to the XDR; thus 100 lisa = 100 xdr. Central banks may not do business with one another except by trading with each other in underlying assets. **Lisa chains are not connected.**
 
 ###Take investment
 Once the Fund Manager has decided which tiers to issue, he must next decide how many to issue at each tier. The total number of coins issued at all tiers must equal at least 20,000 and at most 999,999,999. What number you choose really comes down to the ETH amount you plan to raise, since people don't like using tiny decimals. In the CLI, the Fund Manager:
@@ -191,39 +218,13 @@ Once the Fund Manager has decided which tiers to issue, he must next decide how 
    * This contract listens for deposits in your six ethereum addresses labeled A0, A1, A2, R, R0, and R1 and returns a message over RPC to look for the txn.sender address among the member-investor objects
     * If/when found, give the appropriate amount of coins from that tier to that member-investor
 
-#The Central Bank
-VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, and its XDR instrument. The model has been modified to suit a different purpose: stable appreciation, rather than just *prima facie* stability. This new model creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain (ie., immutability as a backstop for fund managers). We believe it is the ultimate safe haven network. 
-
-## Elements of the Central Bank role versus Fund Manager role
-* Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
-* It also has its own LX coin representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund.
-* The central bank holds a stake pool equaling at least $10,000 USD or 10 percent of each fund's AUM. This covers LX and Lisa positions.
-
-## The Fund LX Exchange Contract
-* All funds in a VMF, including the central bank, have their own LX Exchange Contract address. 
-* This contract address receives A/R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the tx.sender to use. The most common use will be in the contract below. 
-
-## The Lisa Exchange Contract 
-At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
-  * This exchange contract address is available to the entire Lisa chain, even the central bank itself
-  * Upon receiving LX from any one of the 250 funds in its network, this contract sends back a request for 100 percent (+/-1) in R-tier coins
-  * The user must reply by sending that amount of R-tier coins as collateral; both the R-tier collateral and the LX coins are held in escrow by the contract
-  * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
-   * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
-
-## Limits on Outstanding LX and Lisa
-A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
-
-Should the value of voth the R-tier coins and the LX coins stay below 10 percent of earlier value for more than 96 hours, then the LX and R-tier coins being held in the LX Exchange Contract are joined in escrow by the equivalent amount of ETH from the stake pool. This situation remains, marked to market every 24 hours, until the value of the underlying LX and R-tier asset returns.
-
-For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in the stake contract.
-
 ####Notes
 * Fund managers may issue other funds wallet addresses with same info above
 * Central bank will need to deploy a bunch of its own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain, and secure all 250 fund chains
 
 #Member-investor wallet & blockchain explorer mobile application (Nickname: "Flux wallet")
 * Runs a full node on a smartphone
+* Even logged out, members can create a Lisa wallet address with zero balance and **receive** Lisa, which they can then send to others.
 For each Fund a member-investor joins....
 * Get a text invitation to join a fund; download Flux wallet and confirm number
  1. Enter KYC info; create password; turn on 2FA
