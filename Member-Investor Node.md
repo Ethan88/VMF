@@ -1,5 +1,6 @@
 
-# Flux wallet mobile app (
+# Member-Investor Node
+## Underpins the Flux Mobile Wallet app
 **Functional spec**
 This mobile application runs a full Flux node on a smartphone
 * Even logged out, members can create a Lisa wallet address with zero balance and **receive** Lisa, which they can then send to others.
