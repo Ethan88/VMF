@@ -192,7 +192,8 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 ## Elements of the Central Bank role versus Fund Manager role
 * Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
 * It also has its own LX coin representing the average value of its other tiers, and may issue its LX... addresses to other funds, just like any other fund.
-### The Fund LX Exchange Contract
+
+## The Fund LX Exchange Contract
 All funds in a VMF, including the central bank, have their own LX Exchange Contract. This contract address receives A/R tier coins from their own Fund investors, holds it in escrow, and lends out that fund's LX coins for the sender to use and circulate within the Fund (or to any external group that has been given a fund address by this Fund's manager.) 
 
 ## How the central bank (parent fund) is different
