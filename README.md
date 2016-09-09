@@ -72,8 +72,8 @@ Should the value of voth the R-tier coins and the LX coins stay below 10 percent
 For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM, whichever is larger) that they submitted when launching their fund, and which is being held in the stake contract.
 
 #Software components
-0. Central Bank CLI daemon (free and open source)
-1. Fund node CLI daemon (free and open source)
+0. Central Bank CLI daemon/node (free and open source)
+1. Fund node CLI daemon/node (free and open source)
 2. Wallet mobile application (iOS/Android; proprietary)
 3. Trading Interface ("Flux Trade"; proprietary)
  
@@ -87,7 +87,7 @@ For this reason -- to ensure the price stability of the Lisa -- the value of out
 
 In the beginning, someone instantiates a VMF by running the Central Bank daemon. This generates the main chain shared by all funds in a given VMF network. This is the liquid tier chain, also known as the L-tier chain or Lisa chain. Next, they must recruit entrepreneurial Fund Managers who want to join the platform. They do this by running the Fund Daemon and starting a new fund. This Fund exists on its own blockchain, but is also connected to the Lisa chain.
 
-##Specification for Central Bank Node
+##Specification for Central Bank and Fund Nodes
 This CLI node can be deployed on a **Docker instance** (required for ErisDB) and connects to our initial peers at Iterative Instinct. 
 
 ###Creating a Central Bank
