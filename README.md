@@ -7,6 +7,7 @@ By joining a VMF platform, you can launch a transparent blockchain-based investm
 * a cheap cloud VPS running a Docker instance
 * a community of friends, family, or customers that are willing to invest in you
 * six Ethereum addresses
+* $10,000 USD minimum or 10 percent of fund assets AUM in ETH to be held in escrow contract as stake (fully refundable)
 
 **Introduction:** In essence, this project is a cheap and simple open-source kit for a multi-purpose investment fund made transparent and immutable with underlying blockchain technology. A fund instantiated on this network is not architected to scale to city- or state-size, but rather is intended to support a hard-coded limit of 250 investor-members. The returns from this 250-investor fund are used to back several tiers of bespoke currencies which, like shares, appreciate to reflect the performance of fund management. As more funds are join the platform, these currencies will become the basis for economic activites between fund managers and between member-investors. There are a maximum of 250 funds per VMF network and per central bank, bringing the maximum number of humans in the network to around 62,000.
 
@@ -63,7 +64,7 @@ Once connected to the network, the CLI node allows fund administrators to setup 
   * Fund manager must enable two-factor phone number authentication (use Eth proof of phone project?)
 
 ###Requesting permission from central bank
-Now with a Lisa-chain wallet address, fund manager may send a zero-coin transaction to Iterative Instinct's central bank Lisa address, which indicates a request to start a new fund.
+Now with a Lisa-chain wallet address, fund manager may send a zero-coin transaction to Iterative Instinct's central bank Lisa address, which indicates a request to start a new fund. **This should be done only after you have transferred your stake to the stake contract.** Contact partners@iterativeinstinct.com for more information on staking.
   * If rejected, return "rejected; for help email help@iterativeinstinct.com"
   * If this address already submitted, return "already submitted"
   * If request is approved by Iterative Instinct human operator, he generates seed peers for one (1) new Fund chain with no wallet addresses. Next, the fund manager's Docker instance connects to this new chain, and generates seven wallet addresses (A0, A1, A2, R, R0, R1, and LX) and associating them with the Lisa wallet address that sent the new fund request. These addresses are now all part of the new Fund Manager object, sitting on the new Fund chain.
@@ -192,15 +193,22 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 ## Elements of the Central Bank role versus Fund Manager role
 * Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
 * It also has its own LX coin representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund.
+* The central bank holds a stake pool equaling at least $10,000 USD or 10 percent of each fund's AUM. This covers LX and Lisa positions.
 
 ## The Fund LX Exchange Contract
-All funds in a VMF, including the central bank, have their own LX Exchange Contract address. This contract address receives A/R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the tx.sender to use. The most common use will be in the contract below. 
+* All funds in a VMF, including the central bank, have their own LX Exchange Contract address. 
+* This contract address receives A/R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the tx.sender to use. The most common use will be in the contract below. 
 
-## The Lisa Exchange Contract. 
+## The Lisa Exchange Contract 
 At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
   * This exchange contract address is available to the entire Lisa chain, even the central bank itself
-  * Upon receiving LX from any one of the 250 funds in its network, this contract sends back the equivalent amount of Lisa and holds that fund's LX in escrow
+  * Upon receiving LX from any one of the 250 funds in its network, this contract sends back a request for 100 percent (+/-1) in R-tier coins
+  * The user must reply by sending that amount of R-tier coins as collateral; both the R-tier collateral and the LX coins are held in escrow by the contract
+  * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
+
+## Limits on Oustanding LX and Lisa
+The value of outstanding LX and Lisa for any given party (fund, or member investor) may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM)
 
 ####Notes
 * Fund managers may issue other funds wallet addresses with same info above
