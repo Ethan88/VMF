@@ -16,6 +16,8 @@ This all-software crypto-fund would face the scaling issues: biological scaling.
 
 So, the problem is not that banks can't get big enough. It's actually that they can't stay small. Let's go back pre-Nixon, before the Fed's easy money policies began. Even then, a profitable bank would have had a hard time not growing to the size where the customer becomes a depersonalized entity: a row in a spreadsheet instead of Mrs. Jones down the block. As it profits, it lends out more funds, generating new business and thus new deposit accounts, bringing more people into visit the tellers, and so on.
 
+If 250 investors sounds like a tiny bank or fund by present day standards, consider that the account-to-human ratio is about to reverse. That is to say: today, banks require *at least* one account per customer. In fact, many customers have several accounts with one bank (savings, checking, money market, business checking, and so on) which all represent different lines of business for the bank: different departments. In a VMF, it's much more likely that family members (parents and kids; spouses; entire families) will share one account. By giving a relative funds to invest by way of a smart contract, family trust issues are removed, and they can each funnel money to the Fund Manager through the same "head of household" without worrying they won't see the payout. 
+
 ###Approach to a solution
 Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away."
 
