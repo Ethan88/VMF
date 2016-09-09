@@ -258,10 +258,10 @@ The end-user experience (aka, member-investor) for wallet & blockchain explorer
 #Flux Trade (built separately; launching end of September 2016)
 This open-source level 2 tool combines 10 crypto exchanges in one price ladder and order book to make day trading, interval trading, and accumulating long positions easy. Bonus: it's extra easy to get out of tight trades without slippage. But Flux Trade has a more important feature when it comes to the larger fund.
 
-##The Flux Meta Wallet
+**The Flux Meta Wallet**
 Flux Trade has a meta wallet based on Uphold Bank. It keeps reserves safely there, while conducting limited market operations, specifically arbitrage (automated) and trading (manual, by humans). This Meta Wallet serves as the source for price data that member-investors see in their mobile app. As Flux Trade develops, we will add other equities and FX trading to the tool so that market makers of all types can operate funds in our network.
 
-#Fee Contracts
+#Licensing Fees
 Generally speaking, the VMF project is shockingly cheap to deploy for everyone involved, even not considering the unspeakable waste of existing banks that serves as comparison. However, there are fees to maintain and further the development of this software, and to meagerly enrich its creators.
 
 In a given VMF, each Fund pays an annual tithing to the Central Bank to the tune of **0.009** percent per annum of a moving average of AUM **payable in ETH only.** This payment is remitted in 12 intallments, or monthly, each year. Payment is made manually by Fund Managers -- it is not auto-deducted.  
