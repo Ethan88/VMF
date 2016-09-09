@@ -63,8 +63,11 @@ Once connected to the network, the CLI node allows fund administrators to setup 
   * Fund manager must then create a password
   * Fund manager must enable two-factor phone number authentication (use Eth proof of phone project?)
 
+###The stake pool contract
+In order to launch a fund, you'll need to add collateral (ETH) to to a stake pool contract. This is to protect the price of Lisa in the event that your fund collapses while it has LX and/or Lisa coins backed by its assets in circulation amongst other funds. The amount of this stake in ETH should be equivalent to $10,000 USD minimum or 10 percent of fund assets AUM in ETH to be held in escrow contract as stake (fully refundable). Contact partners@iterativeinstinct.com for more information on staking, and to get the stake pool contract address for the Iterative Instinct VMF.
+
 ###Requesting permission from central bank
-Now with a Lisa-chain wallet address, fund manager may send a zero-coin transaction to Iterative Instinct's central bank Lisa address, which indicates a request to start a new fund. **This should be done only after you have transferred your stake to the stake contract.** Contact partners@iterativeinstinct.com for more information on staking.
+Now with a Lisa-chain wallet address, fund manager may send a zero-coin transaction to Iterative Instinct's central bank Lisa address, which indicates a request to start a new fund. **This should be done only after you have transferred your stake to the stake contract.** 
   * If rejected, return "rejected; for help email help@iterativeinstinct.com"
   * If this address already submitted, return "already submitted"
   * If request is approved by Iterative Instinct human operator, he generates seed peers for one (1) new Fund chain with no wallet addresses. Next, the fund manager's Docker instance connects to this new chain, and generates seven wallet addresses (A0, A1, A2, R, R0, R1, and LX) and associating them with the Lisa wallet address that sent the new fund request. These addresses are now all part of the new Fund Manager object, sitting on the new Fund chain.
@@ -208,7 +211,9 @@ At the genesis of a VMF, the parent fund (central bank) issues a hard-coded numb
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
 
 ## Limits on Oustanding LX and Lisa
-The value of outstanding LX and Lisa for any given party (fund, or member investor) may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM)
+A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
+
+Should the value of voth the R-tier coins and the LX coins stay below 10 percent of value for more than 24 hours, then the Fund issuing those coins has likely collapsed. To prevent a drop in the value of the Lisa from such an incident, the value of outstanding LX and Lisa for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in perpetuity in the stake contract.
 
 ####Notes
 * Fund managers may issue other funds wallet addresses with same info above
