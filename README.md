@@ -210,7 +210,7 @@ At the genesis of a VMF, the parent fund (central bank) issues a hard-coded numb
   * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
 
-## Limits on Oustanding LX and Lisa
+## Limits on Outstanding LX and Lisa
 A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
 
 Should the value of voth the R-tier coins and the LX coins stay below 10 percent of value for more than 24 hours, then the Fund issuing those coins has likely collapsed. To prevent a drop in the value of the Lisa from such an incident, the value of outstanding LX and Lisa for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in perpetuity in the stake contract.
