@@ -85,8 +85,8 @@ For this reason -- to ensure the price stability of the Lisa -- the value of out
 #Software components
 0. Central Bank CLI daemon/node (free and open source)
 1. Fund node CLI daemon/node (free and open source)
-2. Wallet mobile application (iOS/Android; proprietary)
-3. Trading Interface ("Flux Trade"; proprietary)
+2. Member-investor node (free and open source; becomes the core of mobile application for iOS/Android)
+3. Trading Account / API Mesh for 10 exchanges (free and open source; becomes the core of Flux Trade)
  
 ###Minimum requirements:
 * one (1) intermediate-level coder to deploy the project
@@ -141,11 +141,11 @@ Now with a Lisa-chain wallet address, fund manager may send a zero-coin transact
   * Fund setup process complete!
 
 ###How Funds onboard member-investors
-First, get their mobile phone numbers.
-* To invite a new member-investor to the system, use the CLI to create a new user associated with the person's phone number (eg., `new.user = 2123002020`)
+First, get their mobile phone numbers, and give them back a password. 
+* To invite a new member-investor to the system, use the CLI to create a new user associated with the person's phone number (eg., `new.user = 2123002020`). Then generate a temporary passcode for each phone number (account) and give it to the person by hand, on paper. 
 * Tell the new member-investor to download the Flux mobile app. The app will auto-generate an Lisa wallet address for them
- * New member-investors must add KYC information and *matching phone number* to the invitation. Phone verification security code involved; rest of mobile app spec is below
- * With the app, member-investors send a zero-coin transaction to Fund Manager's Lisa address from their new Lisa address to request membership
+ * New member-investors must etner *matching phone number and temporary password* to the invitation. Phone verification security code involved; reset password to something user sets. Rest of mobile app spec is in another doc in this repo.
+ * With the app, member-investors send a zero-coin transaction to Fund Manager's Lisa address from their new Lisa address to request membership. This is done in person, with QR codes.
     * If waitlisted, return "waitlist"
     * If rejected, return "rejected"
     * If accepted by fund managers, instantiate A0, A1, A2, R, R0, R1, and LX wallet addresses on the Fund chain, and associate them with the Lisa wallet address that made the request, along with the KYC info the member-investor entered. These are the attributes of the "Member-Investor object." 
