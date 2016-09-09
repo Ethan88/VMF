@@ -2,7 +2,7 @@
 ## "Crypto-economy in a box"
 **DESCRIPTION**: *An open source system for administering a group of transparent, interactive, immutable investment vehicles.*
 
-By joining a VMF platform, you can launch a transparent blockchain-based investment fund in just a few lines of code, with no fees and near-zero overhead. Inter-fund transactions are governed by a fair central bank. For this instance, Iterative Instinct is the central bank; however this software may be licensed to other institutions anywhere in the world who would like to serve in that role. 
+By joining a VMF platform, you can launch a transparent blockchain-based investment fund in just a few lines of code, with no fees and near-zero overhead. Inter-fund transactions are governed by a fair Central Bank. For this instance, Iterative Instinct is the central bank; however this software may be licensed to other institutions anywhere in the world who would like to serve in that role. 
 ###Minimum requirements:
 * one (1) intermediate-level coder to deploy the project
 * one (1) professional asset manager to run it
@@ -45,7 +45,7 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 ## Elements of the Central Bank role versus Fund Manager role
 * Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
 * It also has its own LX coin representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund.
-* The central bank holds a stake pool equaling at least $10,000 USD or 10 percent of each fund's AUM. This covers LX and Lisa positions.
+* The central bank must also contribute to the stake pool equaling at least $10,000 USD or 10 percent of its AUM, just like **every other fund in a VMF.** This covers outstanding LX and Lisa instruments in circulation, as explained below.
 
 ## The Fund LX Exchange Contract
 * All funds in a VMF, including the central bank, have their own LX Exchange Contract address. 
