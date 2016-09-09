@@ -172,72 +172,39 @@ Reserve Tier coins **must equal at least 34 percent** of total coin issuance
 </table>
 
 ####Note on fungibility
-Funds cannot exchange A0, A1, A2, R, R0, and R1 coins with one another. Because each fund's chain is not connected to any other, the only way that funds may do business is by trading their Lx0... instrument for a Lisa coin, and then doing busines in Lisa. The Lisa coin is the lingua franca in the VMF platform network, and its value is pegged to the XDR; thus 100 lisa = 100 xdr. Central banks may not do business with one another. **Lisa chains are not connected.**
+Funds cannot exchange A0, A1, A2, R, R0, and R1 coins with one another. Because each fund's chain is not connected to any other, the only way that funds may do business is by trading their Lx0... instrument for a Lisa coin, and then doing a transacton in Lisa. The Lisa coin is the lingua franca in a given VMF platform network, and its value is pegged to the XDR; thus 100 lisa = 100 xdr. Central banks may not do business with one another except by trading ether. **Lisa chains are not connected.**
 
 ###Take investment
-Once the Fund Manager has decided which tiers to issue, he must next decide how many to issue at each tier. The total number of coins issued at all tiers must equal at least 20,000 and at most 999,999,999. What number you choose really comes down to the ETH amount you plan to raise, since people don't like using tiny decimals. In the CLI:
+Once the Fund Manager has decided which tiers to issue, he must next decide how many to issue at each tier. The total number of coins issued at all tiers must equal at least 20,000 and at most 999,999,999. What number you choose really comes down to the ETH amount you plan to raise, since people don't like using tiny decimals. In the CLI, the Fund Manager:
   * Enters proportion of coins for each tier (out of 100 percent)
   * Enters the size of the total coin pool (at least 20,000)
   * Enters the face value of each coin in ETH (same value for all)
   * "Fundraising exchange" contact address is generated
    * This contract listens for deposits in your six ethereum addresses labeled A0, A1, A2, R, R0, and R1 and returns a message over RPC to look for the txn.sender address among the member-investor objects, and if found, give the appropriate amount of coins from that tier to that member-investor
 
-###Taking investment  
-Investment should be rendered to you, the Fund Manager, in ETH sent to the same addresses you entered when you created the Fund Manager object. The "Fundraising exchange" contract watches for deposits to this address, from member-investor addresses, and automatically
-  * Contract address which accepts ether from a known address and sends back fund coins to that member's wallet
-
-
 #The Central Bank
-From an investor perspective, the purpose of a VMF network of funds is to serve as a high-return safe haven. VMF structure is loosely modeled on the IMF and its [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket and its XDR instrument, but modified to suit a different purpose: stable appreciation, rather than just stability. This creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain (ie., immutability as a backstop for fund managers).
+From an investor perspective, the purpose of a VMF network of funds is to serve as a high-return safe haven. VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, and its XDR instrument, but modified to suit a different purpose: stable appreciation, rather than just stability. This creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain (ie., immutability as a backstop for fund managers).
 
 ##Elements of the central bank role
-* Structured like the other funds, in six tiers, and has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). It also has its own Lx... coin representing the average value of its other tiers, and an Lx address for these coins, and may issue its Lx... addresses to other funds, just like any other.
-* Also connected to the Lisa chain, like all funds; has its own Lisa address; it must also trade with other funds in Lisa.
-* A central bank may transact with another central bank (ie., someone who deployed the project themselves) using ether. 
+* Structured like the other funds, in six tiers, and has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
+* It also has its own Lx... coin representing the average value of its other tiers, and an Lx address for these coins, and may issue its Lx... addresses to other funds, just like any other fund.
+* Also connected to the Lisa chain, like all funds; has its own Lisa address; it can also trade with other funds in Lisa.
+* A central bank may transact with another central bank (ie., someone who deployed the VMF project themselves) using ether.
 
 ##How the central bank is different
 Besides its obvious privilege and obligation to vet new funds and permit them on the platform, the "parent" fund is unlike child funds in the following ways:
- 1. The parent fund holds all 7 wallet addresses for **every single fund** equaling 1,750 wallet addresses for all 250 child funds
+ 1. The parent fund holds 7 wallet addresses for **every single fund** equaling 1,750 wallet addresses representing all 250 child funds
  2. The parent fund creates one issuance of 100,000,000 Lisa, held 100 percent in an exchange contract
- 3. This exchange contract address is available to the entire Lisa chain
-  * When it receives Lisa from a Fund Manager address
+  * This exchange contract address is available to the entire Lisa chain
+  * When it receives Lx from one of the 250 funds in its network, it sends back the equivalent amount of Lisa and holds that fund's LX in escrow
 
-
-
-
-
-
-
-
-
-
-
-####Important Legal & Logistical Notes
-* VMFs may interact by trading their L0 instruments only
-* In a privately-placed VMF, the Actively Managed Tier (A-Tier) is fully redeemable for USD after ~10 years
-* Member-investors holding A- and R-tier coins may sell them to other member-investors, brokered by the fund managers
-* In a "public" (crypto-crowdsale) VMF, fund managers may choose their own lockup period, after which A- and R-tier coins would presumably be made redeemable in one of the underlying crypto-assets (eg., ether or bitcoin).
-
-  
 ####Notes
 * Fund managers may issue other VMFs wallet addresses with same info above
-* We will need to deploy a bunch of our own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain
-* We may require fund managers to operate several Docker instances
+* We will need to deploy a bunch of our own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain, and secure all 250 fund chains
 
-**2. Smart contract library (Nickname: "Flux services")** // Sept - Nov 2016
- Multi-sig contract addresses allow managers to broker trades within their group:
-  * Exchanging between A- and R-tier coins, to adjust an investor's risk profile
-  * Redeeming the liquid tier (L) for A-Tier/R-tier coins
-  * Buying, selling, or trading coins of any tier between members
-  * 
-* One-time minting of the coin pool; 100% unsold coins held in contract (no giveaways!)
-* A-tier and R-tier transfer contracts for converting coins between tiers 
-* Brokerage contract for supervised A-tier / R-tier transfers between members
-* Wallet desktop app contracts for L0 instrument services between members (eg., escrow, layaway, collateralized loan)
-
-**3. Member wallet mobile application (Nickname: "Flux wallet")** // Nov 2016 - March 2017
+#Member wallet & blockchain explorer mobile application (Nickname: "Flux wallet")
 * Runs a full node on a smartphone
-* Accept an invitation to join a VMF; creates a wallet and private key on this device
+* Get a text invitation to join a fund; download Flux wallet and confirm number, enter KYC info 
 * User’s profile contains: wallet address, name, photo, @handle (reputation system t.b.d.)
 * User can see a dashboard for all his or her VMFs, and their performance
 * User can see blockchain explorer for each VMF they’re a member of
