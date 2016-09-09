@@ -1,5 +1,5 @@
 #The Voluntary Monetary Fund
-## "Crypto-economy in a box!"
+## "Crypto-economy in a box"
 **DESCRIPTION**: *An open source system for administering a group of transparent, interactive, immutable investment vehicles.*
 
 By joining a VMF platform, you can launch a transparent blockchain-based investment fund in just a few lines of code, with no fees and near-zero overhead. Inter-fund transactions are governed by a fair central bank. For this instance, Iterative Instinct is the central bank; however this software may be licensed to other institutions anywhere in the world who would like to serve in this role. 
