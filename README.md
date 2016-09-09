@@ -1,5 +1,6 @@
-#Voluntary Monetary Fund
-##Open source platform for transparent investment vehicles arranged in a nested hierarchy
+#the Voluntary Monetary Fund
+## "Crypto-economy in a box!"
+### Open source system for administering transparent, interactive, immutable investment vehicles
 By joining a VMF platform, you can launch a transparent blockchain-based investment fund in just a few lines of code, with no fees and near-zero overhead. Inter-fund transactions are governed by a fair central bank. For this instance, Iterative Instinct is the central bank; however this software may be licensed to other institutions anywhere in the world who would like to serve in this role. 
 ###Minimum requirements:
 * one (1) intermediate-level coder to deploy the project
