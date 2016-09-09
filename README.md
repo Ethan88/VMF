@@ -233,7 +233,7 @@ Once the Fund Manager has decided which tiers to issue, he must next decide how 
 * Fund managers may issue other funds wallet addresses with same info above
 * Central bank will need to deploy a bunch of its own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain, and secure all 250 fund chains
 
-# Flux wallet mobile app
+# Flux wallet mobile app (to be built separately)
 The end-user experience (aka, member-investor) for wallet & blockchain explorer
 * Runs a full node on a smartphone
 * Even logged out, members can create a Lisa wallet address with zero balance and **receive** Lisa, which they can then send to others.
@@ -245,7 +245,8 @@ The end-user experience (aka, member-investor) for wallet & blockchain explorer
  3. Get coins in your new Flux wallet, hooray
 * User’s profile contains: 7 wallet addresses per fund; name, photo, @handle, keybase, website, address, SSN, EIN, and all other KYC information 
 * Reputation system t.b.d.
-* User can see a dashboard for all his or her Fund, and their performance
+* User can see a dashboard for all his or her Funds, and their performance
+* User can see aggregate of all their Funds holdings in this wallet
  * For each Fund user is member-investor in, they can view
   * View all 7 tier coin prices change for this fund last 1h, 3h, 6h, 12h, 1d, 3d, 7d, 10d, 14d, 21d, 1m, 3m, 6m, 9m, 1y, 2y, 3y (...) and YTD. 
 * User can see blockchain explorer for each Fund they’re a member of
@@ -254,7 +255,7 @@ The end-user experience (aka, member-investor) for wallet & blockchain explorer
  * Convert LX coins to Lisa using the central bank's Lisa Exchange Contract
 * User can enter a chat room with other Fund members (use ethTweet?)
 
-#Flux Trade (launching end of September 2016)
+#Flux Trade (built separately; launching end of September 2016)
 This open-source level 2 tool combines 10 crypto exchanges in one price ladder and order book to make day trading, interval trading, and accumulating long positions easy. Bonus: it's extra easy to get out of tight trades without slippage. But Flux Trade has a more important feature when it comes to the larger fund.
 
 ##The Flux Meta Wallet
@@ -265,6 +266,6 @@ Generally speaking, the VMF project is shockingly cheap to deploy for everyone i
 
 In a given VMF, each Fund pays an annual tithing to the Central Bank to the tune of **0.009** percent per annum of a moving average of AUM **payable in ETH only.** This payment is remitted in 12 intallments, or monthly, each year. Payment is made manually by Fund Managers -- it is not auto-deducted.  
 
-For other VMFs licensing this software to operate as their own Central Banks, a licensing fee of **3** percent of their total fee haul per annum, to be paid in 12 installments and **also remitted in ETH.**
+For other VMFs licensing this software to operate as their own Central Banks, a licensing fee of **4.4** percent of their total fee haul per annum, to be paid in 12 installments and **also remitted in ETH.**
 
 Flux Trade introduces a **0.01** percent fee per trade, per exchange.
