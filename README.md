@@ -58,7 +58,7 @@ This CLI node can be deployed on a **Docker instance** (required for ErisDB) and
 ###Creating a fund
 Once connected to the network, the CLI node allows fund administrators to setup their fund as follows:
 * New fund manager can use the CLI to instantiate a new wallet address on the liquid-tier chain (nickname: Lisa chain) which is shared by all funds. Anyone on earth may obtain a Lisa wallet address with the Flux mobile app. 
-  * Next, the fund manager must enter his information. This Lisa address will turn into a Fund Manager object containing attributes: six ethereum addresses from an existing Mist wallet, labeled for the six actively managed tiers A0, A1, A2, R, R0, and R1; plus name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL
+  * Next, the fund manager must enter his information. This Lisa address will turn into a Fund Manager object containing attributes: six ethereum addresses from an existing Mist wallet, labeled for the six actively managed tiers A0, A1, A2, R, R0, and R1; full legal name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL
   * Fund manager must then create a password
   * Fund manager must enable two-factor phone number authentication (use Eth proof of phone project?)
 
@@ -196,7 +196,8 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 ## The Fund LX Exchange Contract
 All funds in a VMF, including the central bank, have their own LX Exchange Contract address. This contract address receives A/R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the tx.sender to use. The most common use will be in the contract below. 
 
-## The Lisa Exchange Contract. At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
+## The Lisa Exchange Contract. 
+At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
   * This exchange contract address is available to the entire Lisa chain, even the central bank itself
   * Upon receiving LX from any one of the 250 funds in its network, this contract sends back the equivalent amount of Lisa and holds that fund's LX in escrow
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
