@@ -9,10 +9,10 @@ By joining a VMF platform, you can launch a transparent blockchain-based investm
 * six Ethereum addresses
 * $10,000 USD minimum or 10 percent of fund assets AUM in ETH to be held in escrow contract as stake (fully refundable)
 
-**Introduction:** In essence, this project is a cheap and simple open-source kit for a multi-purpose investment fund made transparent and immutable with underlying blockchain technology. A fund instantiated on this network is not architected to scale to city- or state-size, but rather is intended to support a hard-coded limit of 250 investor-members. The returns from this 250-investor fund are used to back several tiers of bespoke currencies which, like shares, appreciate to reflect the performance of fund management. As more funds are join the platform, these currencies will become the basis for economic activites between fund managers and between member-investors. There are a maximum of 250 funds per VMF network and per central bank, bringing the maximum number of humans in the network to around 62,000.
+**Introduction:** In essence, this project is a cheap and simple open-source kit for a multi-purpose investment fund made transparent and immutable with underlying blockchain technology. A fund instantiated on this network is not architected to scale to city- or state-size, but rather is intended to support a hard-coded limit of 250 investor-members. The returns from this 250-investor fund are used to back several tiers of bespoke currencies which, like shares, appreciate to reflect the performance of fund management. As more funds are join the platform, these currencies will become the basis for economic activites between fund managers and between member-investors. There are a maximum of 250 funds per VMF network and per central bank, bringing the maximum number of humans in a given VMF network to around 62,000.
 
 ###Target audience
-Both the "parent" central bank daemon (ie., the VMF platform as a whole) and individual "child" Fund daemon are designed to be deployable by anyone with command-line experience, cloud servers, and a little financial know-how.  At first, we expect it will be run by existing brands and membership clubs, replacing rewards systems that use "points" or "miles" with more professionalized financial services. Solo asset managers may also raise and operate various kinds of investment funds using this software. 
+Both the "parent" central bank daemon (ie., the VMF platform as a whole) and individual "child" Fund daemon are designed to be deployable by anyone with command-line experience, cloud servers, and a little financial know-how.  At first, we expect small brands, startups, and small asset managers to join our Iterative Instinct VMF. Quickly thereafter, we expect our Central Bank daemon will be run by large brands, hotels, airlines, membership clubs, and other organizations looking to replace or amplify rewards systems that use "points" or "miles" and realize the increased revenue from more professionalized financial services.
 
 ###Project Goals
 Encourage communities of people to save and grow their money together. 
@@ -24,10 +24,10 @@ Architected with private business in mind, this system has no governance apparat
 Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away.” 
 
 ###Solution
-The VMF concept proposes a three-level hierarchy for a community monetary "fund of funds" which uses financial and social incentives, as well as immutable ledgers, to keep members and managers honest.
+The VMF concept proposes a three-level hierarchy: the central bank, the funds, and the member-investors of those funds. In sum, this network is a community monetary "fund of funds" which uses financial and social incentives, as well as immutable ledgers, to keep members and managers honest, and to grow everyone's wealth sustainably.
 
 ###How it works
-The Fund Manager has one basic job: to incorporate citizens into their Fund by issuing them a wallet address. This is the primary responsibility of the managers of a given Fund: to choose who can be in it. Secondarily, they manage the money of those who enter the Fund.
+The Central Bank has one job: get good Fund Managers on the platform. The Fund Manager, in turn, has one basic job: to incorporate wealthy and honest citizens into their Fund by issuing them a wallet address. This is the primary responsibility of the managers of a given Fund: to choose who can be in it. Secondarily, they manage the money of those who enter the Fund, and try to grow its value in various ways.
 
 ###Management powers
 In addition to admitting members, the managers are in charge of active management of their portfolio. They are incentivized to hold and grow the value of the coins they issue in various ways. Fund managers may diversify holdings by trading coins with another Fund community on behalf of their members out of a common pool by incorporating another Fund as a citizen (ie., issuing the outside group a single wallet address). However, inside a Fund it is strictly a one-person, one-wallet address system.
@@ -66,7 +66,7 @@ Once connected to the network, the CLI node allows fund administrators to setup 
 ###The stake pool contract
 In order to launch a fund, you'll need to add collateral (ETH) to to a stake pool contract. This is to protect the price of Lisa in the event that your fund collapses while it has LX and/or Lisa coins backed by its assets in circulation amongst other funds. The amount of this stake in ETH should be equivalent to $10,000 USD minimum or 10 percent of fund assets AUM in ETH to be held in escrow contract as stake (fully refundable). Contact partners@iterativeinstinct.com for more information on staking, and to get the stake pool contract address for the Iterative Instinct VMF.
 
-###Requesting permission from central bank
+###Requesting permission from a central bank
 Now with a Lisa-chain wallet address, fund manager may send a zero-coin transaction to Iterative Instinct's central bank Lisa address, which indicates a request to start a new fund. **This should be done only after you have transferred your stake to the stake contract.** 
   * If rejected, return "rejected; for help email help@iterativeinstinct.com"
   * If this address already submitted, return "already submitted"
@@ -237,4 +237,8 @@ For each Fund a member-investor joins....
  * Convert LX coins to Lisa using the central bank's Lisa Exchange Contract
 * User can enter a chat room with other Fund members (use ethTweet?)
 
-#Flux Trade
+#Flux Trade (launching end of September 2016)
+This open-source level 2 tool combines 10 crypto exchanges in one price ladder and order book to make day trading, interval trading, and accumulating long positions easy. Bonus: it's extra easy to get out of tight trades without slippage. But Flux Trade has a more important feature when it comes to the larger fund.
+
+##The Flux Meta Wallet
+Flux Trade has a meta wallet based on Uphold Bank. It keeps reserves safely there, while conducting limited market operations, specifically arbitrage (automated) and trading (manual, by humans). This Meta Wallet serves as the source for price data that member-investors see in their mobile app. As Flux Trade develops, we will add other equities and FX trading to the tool so that market makers of all types can operate funds in our network.
