@@ -234,10 +234,11 @@ Once the Fund Manager has decided which tiers to issue, he must next decide how 
 * Central bank will need to deploy a bunch of its own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain, and secure all 250 fund chains
 
 # Flux wallet mobile app
-## Member-investor wallet & blockchain explorer mobile application
+The end-user experience (aka, member-investor) for wallet & blockchain explorer
 * Runs a full node on a smartphone
 * Even logged out, members can create a Lisa wallet address with zero balance and **receive** Lisa, which they can then send to others.
-For each Fund a member-investor joins....
+* User may login to all their Funds. 
+* User may add new Funds. For each Fund a member-investor joins....
 * Get a text invitation to join a fund; download Flux wallet and confirm number
  1. Enter KYC info; create password; turn on 2FA
  2. View the six ETH wallet addresses for this fund, and send in your Ether
