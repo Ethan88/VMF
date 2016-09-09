@@ -163,7 +163,9 @@ Reserve Tier coins **must equal at least 34 percent** of total coin issuance
     <td>Lx0...</td>
     <td>Stable-coin specific to this fund, and redeemable for the above tiers. Gets its value from the sum total basket average. Value shown in Lisa.</td>
     <td>Risk average of entire fund</td>
-     <td>Lisa</td>
+  </tr>
+  <tr>
+    <td>Lisa</td>
     <td>Stable-coin usable across all the L-chain which connects all funds in this VMF instance. Value pegged to XDR.</td>
     <td>Low</td>
   </tr>
