@@ -278,14 +278,19 @@ The end-user experience (aka, member-investor) for wallet & blockchain explorer
 * User’s profile contains: 7 wallet addresses per fund; name, photo, @handle, keybase, website, address, SSN, EIN, and all other KYC information 
 * Reputation system t.b.d.
 * User can see a dashboard for all his or her Funds, and their performance
+* User can add wallet addresses to an address book associated with a keybase ID
 * User can see aggregate of all their Funds holdings in this wallet
  * For each Fund user is member-investor in, they can view
   * View all 7 tier coin prices change for this fund last 1h, 3h, 6h, 12h, 1d, 3d, 7d, 10d, 14d, 21d, 1m, 3m, 6m, 9m, 1y, 2y, 3y (...) and YTD. 
 * User can see blockchain explorer for each Fund they’re a member of
+* User can SEND, RECEIVE, and REQUEST funds from anyone in their wallet address book
 * User can use contracts
  * Convert A/R coins to LX using the Fund LX Exchange Contract; the A/R coins are held in escrow
  * Convert LX coins to Lisa using the central bank's Lisa Exchange Contract
-* User can enter a chat room with other Fund members (use ethTweet?)
+ * Annuity contract between 1:n addresses
+ * Escrow (ie., sale & transfer of goods) contract
+ * Recurring remittance
+ * Account transfer (multi-sig required, including fund managers and two random member-investors, who must personally verify individual's desire to transfer account to a new owner).
 
 #Flux Trade (built separately; launching end of September 2016)
 This open-source level 2 tool combines 10 crypto exchanges in one price ladder and order book to make day trading, interval trading, and accumulating long positions easy. Bonus: it's extra easy to get out of tight trades without slippage. But Flux Trade has a more important feature when it comes to the larger fund.
