@@ -23,9 +23,8 @@ Encourage communities of like-minded people to save and grow their money togethe
 Architected with private business in mind, this system has no governance apparatus for changing itself (i.e., there is no voting, elections, or DAO mechanics). Participation in a given Fund or network of Funds is private, voluntary, and non-exclusive. It is purely an economic system which leaves governance up to the community and the fund managers. Zero data is available to those outside the fund, but member-investors get full visibility into all activity inside their Fund by viewing its blockchain explorer inside their mobile app. (Addresses are pseudonymous, but hardly anonymous.) The central bank may look at all Fund blockchains within its VMF, but has no power to move assets in any of them. 
 
 ###Approach
-Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away.” 
+Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away.”
 
-###Solution
 The VMF concept proposes a three-level hierarchy: the central bank, the funds, and the member-investors of those funds. In sum, this network is a community monetary "fund of funds" which uses financial and social incentives, as well as immutable ledgers, to keep members and managers honest, and to grow everyone's wealth sustainably.
 
 ###How it works
