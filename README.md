@@ -189,17 +189,17 @@ Once the Fund Manager has decided which tiers to issue, he must next decide how 
 #The Central Bank
 VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, and its XDR instrument. The model has been modified to suit a different purpose: stable appreciation, rather than just *prima facie* stability. This new model creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain (ie., immutability as a backstop for fund managers). We believe it is the ultimate safe haven network. 
 
-##Elements of the Central Bank role vereus Fund Manager role
+## Elements of the Central Bank role versus Fund Manager role
 * Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
-* It also has its own Lx... coin representing the average value of its other tiers, and an Lx address for these coins, and may issue its Lx... addresses to other funds, just like any other fund.
-###The Fund LX Exchange Contract
+* It also has its own LX coin representing the average value of its other tiers, and may issue its LX... addresses to other funds, just like any other fund.
+### The Fund LX Exchange Contract
 All funds in a VMF, including the central bank, have their own LX Exchange Contract. This contract address receives A/R tier coins from their own Fund investors, holds it in escrow, and lends out that fund's LX coins for the sender to use and circulate within the Fund (or to any external group that has been given a fund address by this Fund's manager.) 
 
-##How the central bank (parent fund) is different
+## How the central bank (parent fund) is different
 The central bank does two things:
  1. Initializes the **Lisa Exchange Contract.** At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
   * This exchange contract address is available to the entire Lisa chain, even the central bank itself
-  * Upon receiving Lx from any one of the 250 funds in its network, this contract sends back the equivalent amount of Lisa and holds that fund's LX in escrow
+  * Upon receiving LX from any one of the 250 funds in its network, this contract sends back the equivalent amount of Lisa and holds that fund's LX in escrow
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
 
 ####Notes
