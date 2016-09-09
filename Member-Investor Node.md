@@ -1,17 +1,11 @@
 
 # Member-Investor Node
 ## Underpins the Flux Mobile Wallet app
-**Functional spec**
-This mobile application runs a full Flux node on a smartphone
+This app is intended for two groups of users. The first, logged-out users, may just want to create a Lisa wallet to receive (and hold, and send) some Lisa coins from a friend. Logged in users have access to all their Iterative Instinct investments, marked to market in 1-second intervals (ie., the blocktime of the Tendermint consensus engine).
+
+### Functional Spec
+* Runs a full Lisa chain & A/R chain nodes on a smartphone
 * Even logged out, members can create a Lisa wallet address with zero balance and **receive** Lisa, which they can then send to others.
-* User can SEND, RECEIVE, and REQUEST funds from anyone in their wallet address book using QR codes (no address book if logged out; QR code scan only)
-
-
-Depositing Funds
- 1. View the six ETH wallet addresses for this fund, and send in your Ether
- 2. Get coins in your new Flux wallet, hooray (this is the Fund Exchange Contract in action)
- 
- NOTES
  
  LOGGED OUT
  Opening screen
@@ -31,6 +25,7 @@ Depositing Funds
  * User may "log in" by entering their phone number and temporary password they got from the fund manager in person. Then they get a confirmation code by SMS. The user must then reset the password to something they choose.
   * Once code is entered, this brings up all their funds and wallets to which this phone number is associated. 
   * Check for KYC info and 2FA; if either are absent, prompt user to finish filling out "passport" KYC info and turn on 2FA
+  * NB that KYC info includes an ETH address, full legal name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL.
 
 LOGGED IN
 * Complete Keybase verification flow
@@ -48,7 +43,10 @@ LOGGED IN
 * Request (QR and Contact Book)
 * Write Check (1:n)
 * Get Cash (Lisa withdrawl; this uses A/R --> LX contract; then LX --> Lisa contract)
-* Deposit ETH (this shows the six addresses of your fund, for each risk tier)
+* Deposit ETH. Be sure to deposit ETH only from the address you added to your profile during signup.
+ * (This view shows the six QR codes for the six ETH addresses of your fund, representing each risk tier)
+ * The six QR codes are labeled A0, A1, A2, R, R0, and R1.
+ * Once ETH is deposited in once of these QR codes, 
 * Savings Account (LX wallet)
 * Misc. Settings 
  * Account transfer (multi-sig required, including fund managers and two random member-investors, who must personally verify individual's desire to transfer account to a new owner).
