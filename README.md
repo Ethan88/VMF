@@ -48,7 +48,12 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 * The central bank must also contribute to the stake pool equaling at least $10,000 USD or 10 percent of its AUM, whichever is larger, just like **every other fund in a VMF.** This covers outstanding LX and Lisa instruments in circulation, as explained below.
 
 ## The Fund A/R Exchange Contract
-All funds in a VMF, including the central bank, have an A/R Exchange Contract which will turn A-tier coins into the equivalent value of their own R-tier coins, and visa-versa. These coins are not transmissable outside a given fund, but may be sold and exchanged between member-investors within a Fund. (Fund Managers may issue other funds an LX address for their fund's LX coin, or else they can trade in the universal coin, Lisa.)
+All funds in a VMF, including the central bank, have an A/R Exchange Contract which will turn A-tier coins into the equivalent value of their own R-tier coins, and visa-versa. These coins are not transmissable outside a given fund, but may be sold and exchanged between member-investors within a Fund. 
+
+Why would anyone exchange A-tier coins for R-tier coins? Because R-tier coins are the only ones allowed to back a fund's LX instrument, which is the "index" coin that tracks the performance of that particular fund. Of course, every member-investor of a fund gets an LX address upon signup and acceptance. But Fund Managers may also choose to issue LX addresses to other funds. But these LX coins have larger purposes: read on!
+
+## The Fund LX Exchange Contract
+All funds in a VMF, including the central bank, have their own LX Exchange Contract address. And every fund, including the Central Bank, has LX coins issued and held 100 percent in contract when its blockchain begins. This contract address will release these LX coins if sent collateral. That is: the contract receives R-tier (reserve) coins, which should be relatively price stable, and holds them in escrow. In turn, it lends out that fund's LX (index) coins to whomever the `tx.sender` of the LX was. This LX may be then be sent as payment to other member-investors, or held by another Fund as an investment. Another common use will be in backing Lisa coins, in the contract below.
 
 ### How Lisa Coins Are Issued
 At the genesis of a VMF, the parent fund (Central Bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract." Both Funds and the Central Bank must send ~100 percent (+/-1) collateral in R-tier coins to the LX contract to borrow Lisa and put those coins into circulation.
@@ -58,9 +63,6 @@ At the genesis of a VMF, the parent fund (Central Bank) issues a hard-coded numb
   * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
 
-## The Fund LX Exchange Contract
-All funds in a VMF, including the central bank, have their own LX Exchange Contract address. This contract address receives R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the `tx.sender` to use. This may be to send LX to other member-investors, or for Funds to send other funds their LX coins in exchange for some underlying asset. Another common use will be in the contract below. 
-
 ## The Lisa Exchange Contract 
 In order to trade with one another universally, Fund Managers will probably use Lisa coins. (Fund Managers who know each other, and have formed a syndicate, might issue one another's Funds a wallet address in their own fund's LX coin, and those pass LX coins back and forth.) But the Lisa coin will be most commonly circulated, itself "backed into" circulation by someone's LX and R-tier collateral, plus the value of their stake in the ETH stake pool.
 
@@ -69,7 +71,7 @@ A scenario might arise where a member-investor sends another member-investor som
 
 Should the value of voth the R-tier coins and the LX coins stay below 10 percent of earlier value for more than 96 hours, then the LX and R-tier coins being held in the LX Exchange Contract are joined in escrow by the equivalent amount of ETH from the stake pool. This situation remains, marked to market every 24 hours, until the value of the underlying LX and R-tier asset returns.
 
-For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in the stake contract.
+For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM, whichever is larger) that they submitted when launching their fund, and which is being held in the stake contract.
 
 ###Crowdfunding a new Fund on a VMF platform
 * In the Untied States, anybody who has registered a private placement with the SEC under regulation D may crowdsale their VMF in USD from accredited investors (ie., what we did). *With this option, your investors may not withdraw their funds for the length of the fund, essentially behaving like a market-linked certificate of deposit.*
@@ -124,10 +126,14 @@ Now that your fund is up and running, you may enlist up to 250 member-investors.
      * Tell them to back up their damn private keys
 *Lastly, have them send ETH to any or all of your six fund ETH addresses that you (as Fund Manager) entered upon when you created your fund. Remember to tell your investors that these ETH addresesses for A0, A1, A2, R, R0, and/or R1 correspond to risk level!
 
-#Fund composition and coin issuance
-Now that you have a fund and some investors, you'll need to take their money and give them back shares in your fund. These shares are represented by coins: the six actively managed tiers, corresponding with the types of wallet addresess you created: A0, A1, A2, R, R0, and R1. There are seven different kinds of coins for each fund, each representing a different level of risk. (The seventh, LX..., represents an average of the value of all.) 
+# Fund composition and coin issuance
+Now that you have a fund and some investors, you'll need to take their money and give them back shares in your fund. These shares are represented by coins: the six actively managed tiers, corresponding with the types of wallet addresess you created: A0, A1, A2, R, R0, and R1. There are seven different kinds of coins for each fund, each representing a different level of risk. (The seventh, LX, represents an "index," or moving average, of the value of all.)
 
-As a fund manager, you may issue whatever combination number and type of coins you like right in the command line, representing whatever business activity you like for each tier -- just remember to sort them by risk. LX coins are held in contract, and exchangeable only for underlying A/R coins (See the table below, and contract details further down.)
+## A/R Tier Issuance
+As a fund manager, you may issue whatever combination number and type of coins you like right in the command line, representing whatever business activity you like for each tier -- just remember to sort them by risk. 
+
+##LX Issuance
+Your fund may issue as many LX coins as it likes, with the same minimums and maxiumums as the other tiers. The difference is that **all LX coins are held in contract** and are put in circulation only once R-tier coins have been put up as collateral (See the table below, and more contract details and limits further down.)
 
 ##Choose your fund's risk profile
 Whatever business activities are creating your profits, rank them by riskiness into one of the categories below. Then decide what percentage of your total funding will go to each activity; that is, what mixture of coins you'd like to issue. Some people may only issue one tier of coins, while others will be active in all six tiers.
