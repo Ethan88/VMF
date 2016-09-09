@@ -229,11 +229,12 @@ Once the Fund Manager has decided which tiers to issue, he must next decide how 
    * This contract listens for deposits in your six ethereum addresses labeled A0, A1, A2, R, R0, and R1 and returns a message over RPC to look for the txn.sender address among the member-investor objects
     * If/when found, give the appropriate amount of coins from that tier to that member-investor
 
-####Notes
+#### Notes
 * Fund managers may issue other funds wallet addresses with same info above
 * Central bank will need to deploy a bunch of its own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain, and secure all 250 fund chains
 
-#Member-investor wallet & blockchain explorer mobile application (Nickname: "Flux wallet")
+# Flux wallet mobile app
+## Member-investor wallet & blockchain explorer mobile application
 * Runs a full node on a smartphone
 * Even logged out, members can create a Lisa wallet address with zero balance and **receive** Lisa, which they can then send to others.
 For each Fund a member-investor joins....
