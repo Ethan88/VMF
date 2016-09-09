@@ -50,19 +50,19 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 ## The Fund A/R Exchange Contract
 All funds in a VMF, including the central bank, have an A/R Exchange Contract which will turn A-tier coins into the equivalent value of their own R-tier coins, and visa-versa. These coins are not transmissable outside a given fund, but may be sold and exchanged between member-investors within a Fund. (Fund Managers may issue other funds an LX address for their fund's LX coin, or else they can trade in the universal coin, Lisa.)
 
-## The Fund LX Exchange Contract
-* All funds in a VMF, including the central bank, have their own LX Exchange Contract address. 
-* This contract address receives R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the `tx.sender` to use. This may be to send LX to other member-investors, or for Funds to send other funds their LX coins in exchange for some underlying asset. Another common use will be in the contract below. 
-
-## The Lisa Exchange Contract 
-In order to trade with one another universally, Fund Managers will probably use Lisa coins. (Fund Managers who know each other, and have formed a syndicate, might issue one another's Funds a wallet address in their own fund's LX coin, and those pass LX coins back and forth.) But the Lisa coin will be most commonly circulated, itself "backed into" circulation by someone's LX and R-tier collateral, plus the value of their stake in the ETH stake pool.
-
-At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract." Both funds and the central bank must put up 100 percent collateral in R-tier coins when using the LX contract to borrow Lisa and put those coins into circulation
+### How Lisa Coins Are Issued
+At the genesis of a VMF, the parent fund (Central Bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract." Both Funds and the Central Bank must send ~100 percent (+/-1) collateral in R-tier coins to the LX contract to borrow Lisa and put those coins into circulation.
   * This exchange contract address is available to the entire Lisa chain, even the central bank itself
   * Upon receiving LX from any one of the 250 funds in its network, this contract sends back a request for 100 percent (+/-1) in R-tier coins
   * The user must reply by sending that amount of R-tier coins as collateral; both the R-tier collateral and the LX coins are held in escrow by the contract
   * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
+
+## The Fund LX Exchange Contract
+All funds in a VMF, including the central bank, have their own LX Exchange Contract address. This contract address receives R tier coins from their own Fund investors, holds them in escrow, and lends out that fund's LX coins for the `tx.sender` to use. This may be to send LX to other member-investors, or for Funds to send other funds their LX coins in exchange for some underlying asset. Another common use will be in the contract below. 
+
+## The Lisa Exchange Contract 
+In order to trade with one another universally, Fund Managers will probably use Lisa coins. (Fund Managers who know each other, and have formed a syndicate, might issue one another's Funds a wallet address in their own fund's LX coin, and those pass LX coins back and forth.) But the Lisa coin will be most commonly circulated, itself "backed into" circulation by someone's LX and R-tier collateral, plus the value of their stake in the ETH stake pool.
 
 ## Limits on Outstanding LX and Lisa
 A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
