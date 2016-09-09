@@ -263,7 +263,7 @@ Flux Trade has a meta wallet based on Uphold Bank. It keeps reserves safely ther
 #Fee Contracts
 Generally speaking, the VMF project is shockingly cheap to deploy for everyone involved, even not considering the unspeakable waste of existing banks that serves as comparison. However, there are fees to maintain and further the development of this software, and to meagerly enrich its creators.
 
-In a given VMF, each Fund pays an annual tithing to the Central Bank to the tune of **0.009** percent per annum of a moving average of AUM **payable monthly in ETH only.** This payment is remitted in 12 intallments, or monthly, each year. Payment is made manually by Fund Managers -- it is not auto-deducted.  
+In a given VMF, each Fund pays an annual tithing to the Central Bank to the tune of **0.009** percent per annum of a moving average of AUM **payable in ETH only.** This payment is remitted in 12 intallments, or monthly, each year. Payment is made manually by Fund Managers -- it is not auto-deducted.  
 
 For other VMFs licensing this software to operate as their own Central Banks, a licensing fee of **3** percent of their total fee haul per annum, to be paid in 12 installments and **also remitted in ETH.**
 
