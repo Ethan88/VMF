@@ -6,7 +6,7 @@ By joining a VMF platform, you can launch a transparent blockchain-based investm
 * one (1) professional asset manager to run it
 * a cheap cloud VPS running a Docker instance
 * a community of friends, family, or customers that are willing to invest in you
-* six Ethereum addresses
+* six Ethereum addresses 
 * $10,000 USD minimum or 10 percent of fund assets AUM in ETH to be held in escrow contract as stake (fully refundable)
 
 **Introduction:** In essence, this project is a cheap and simple open-source kit for a multi-purpose investment fund made transparent and immutable with underlying blockchain technology. A fund instantiated on this network is not architected to scale to city- or state-size, but rather is intended to support a hard-coded limit of 250 investor-members. The returns from this 250-investor fund are used to back several tiers of bespoke currencies which, like shares, appreciate to reflect the performance of fund management. As more funds are join the platform, these currencies will become the basis for economic activites between fund managers and between member-investors. There are a maximum of 250 funds per VMF network and per central bank, bringing the maximum number of humans in a given VMF network to around 62,000.
@@ -213,7 +213,9 @@ At the genesis of a VMF, the parent fund (central bank) issues a hard-coded numb
 ## Limits on Outstanding LX and Lisa
 A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
 
-Should the value of voth the R-tier coins and the LX coins stay below 10 percent of value for more than 24 hours, then the Fund issuing those coins has likely collapsed. To prevent a drop in the value of the Lisa from such an incident, the value of outstanding LX and Lisa for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in perpetuity in the stake contract.
+Should the value of voth the R-tier coins and the LX coins stay below 10 percent of earlier value for more than 96 hours, then the LX and R-tier coins being held in the LX Exchange Contract are joined in escrow by the equivalent amount of ETH from the stake pool. This situation remains, marked to market every 24 hours, until the value of the underlying LX and R-tier asset returns.
+
+For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM) they submitted when launching their fund, and which is being held in the stake contract.
 
 ####Notes
 * Fund managers may issue other funds wallet addresses with same info above
