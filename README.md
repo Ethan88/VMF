@@ -118,7 +118,7 @@ Now with a Lisa-chain wallet address, fund manager may send a zero-coin transact
 ###Getting Investors
 Now that your fund is up and running, you may enlist up to 250 member-investors. First, get their mobile phone numbers.
 * To invite a new member-investor to the system, use the CLI to create a new user associated with the person's phone number (eg., `new.user = 2123002020`)
-* Tell the new member-investor to download the Flux mobile app. The app will auto-generate an L-tier wallet address for them
+* Tell the new member-investor to download the Flux mobile app. The app will auto-generate an Lisa wallet address for them
  * New member-investors must add KYC information and *matching phone number* to the invitation. Phone verification security code involved; rest of mobile app spec is below
  * With the app, member-investors send a zero-coin transaction to Fund Manager's Lisa address from their new Lisa address to request membership
     * If waitlisted, return "waitlist"
