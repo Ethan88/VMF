@@ -259,6 +259,7 @@ The end-user experience (aka, member-investor) for wallet & blockchain explorer
 This open-source level 2 tool combines 10 crypto exchanges in one price ladder and order book to make day trading, interval trading, and accumulating long positions easy. Bonus: it's extra easy to get out of tight trades without slippage. But Flux Trade has a more important feature when it comes to the larger fund.
 
 **The Flux Meta Wallet**
+
 Flux Trade has a meta wallet based on Uphold Bank. It keeps reserves safely there, while conducting limited market operations, specifically arbitrage (automated) and trading (manual, by humans). This Meta Wallet serves as the source for price data that member-investors see in their mobile app. As Flux Trade develops, we will add other equities and FX trading to the tool so that market makers of all types can operate funds in our network.
 
 #Licensing Fees
