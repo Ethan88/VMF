@@ -2,7 +2,7 @@
 ## "Crypto-economy in a box"
 **DESCRIPTION**: *An open source system for administering a group of transparent, interactive, immutable investment vehicles.*
 
-By joining a VMF platform, you can launch a transparent blockchain-based investment fund in just a few lines of code, with no fees and near-zero overhead. Inter-fund transactions are governed by a fair central bank. For this instance, Iterative Instinct is the central bank; however this software may be licensed to other institutions anywhere in the world who would like to serve in this role. 
+By joining a VMF platform, you can launch a transparent blockchain-based investment fund in just a few lines of code, with no fees and near-zero overhead. Inter-fund transactions are governed by a fair central bank. For this instance, Iterative Instinct is the central bank; however this software may be licensed to other institutions anywhere in the world who would like to serve in that role. 
 ###Minimum requirements:
 * one (1) intermediate-level coder to deploy the project
 * one (1) professional asset manager to run it
@@ -17,7 +17,7 @@ By joining a VMF platform, you can launch a transparent blockchain-based investm
 Both the "parent" central bank daemon (ie., the VMF platform as a whole) and individual "child" Fund daemon are designed to be deployable by anyone with command-line experience, cloud servers, and a little financial know-how.  At first, we expect small brands, startups, and small asset managers to join our Iterative Instinct VMF. Quickly thereafter, we expect our Central Bank daemon will be run by large brands, hotels, airlines, membership clubs, and other organizations looking to replace or amplify rewards systems that use "points" or "miles" and realize the increased revenue from more professionalized financial services.
 
 ###Project Goals
-Encourage communities of people to save and grow their money together. 
+Encourage communities of like-minded people to save and grow their money together. Secondarily, to bootstrap coins into circulation between these people for goods, services, and debts.
 
 ###Governance
 Architected with private business in mind, this system has no governance apparatus for changing itself (i.e., there is no voting, elections, or DAO mechanics). Participation in a given Fund or network of Funds is private, voluntary, and non-exclusive. It is purely an economic system which leaves governance up to the community and the fund managers. Zero data is available to those outside the fund, but member-investors get full visibility into all activity inside their Fund. The central bank may look at all blockchains but cannot move assets on any of them. 
