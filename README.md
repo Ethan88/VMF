@@ -78,18 +78,19 @@ Now with a Lisa-chain wallet address, fund manager may send a zero-coin transact
 Now that your fund is up and running, you may enlist up to 250 member-investors. First, get their mobile phone numbers.
 * To invite a new member-investor to the system, use the CLI to create a new user associated with the person's phone number (eg., `new.user = 2123002020`)
 * Tell the new member-investor to download the Flux mobile app. The app will auto-generate an L-tier wallet address for them
- * New member-investors must add KYC information and *matching phone number* to the invitation. Phone verification security code involved; rest of mobile app spec is below)
+ * New member-investors must add KYC information and *matching phone number* to the invitation. Phone verification security code involved; rest of mobile app spec is below
  * With the app, member-investors send a zero-coin transaction to Fund Manager's Lisa address from their new Lisa address to request membership
     * If waitlisted, return "waitlist"
     * If rejected, return "rejected"
     * If accepted by fund managers, instantiate A0, A1, A2, R, R0, R1, and LX wallet addresses on the Fund chain, and associate them with the Lisa wallet address that made the request, along with the KYC info the member-investor entered. These are the attributes of the "Member-Investor object." 
      * Save the private keys for this users 7 addresses to the member-investor's mobile device.
      * Tell them to back up their damn private keys
+*Lastly, have them send ETH to any or all of your six fund ETH addresses that you (as Fund Manager) entered upon when you created your fund. Remember to tell your investors that these ETH addresesses for A0, A1, A2, R, R0, and/or R1 correspond to risk level!
 
 #Fund composition and coin issuance
 Now that you have a fund and some investors, you'll need to take their money and give them back shares in your fund. These shares are represented by coins: the six actively managed tiers, corresponding with the types of wallet addresess you created: A0, A1, A2, R, R0, and R1. There are seven different kinds of coins for each fund, each representing a different level of risk. (The seventh, LX..., represents an average of the value of all.) 
 
-As a fund manager, you may issue whatever combination number and type of coins you like right in the command line, representing whatever business activity you like for each tier -- just remember to sort them by risk. LX coins are held in contract, and exchangeable only for underlying A/R coins (See the table below.)
+As a fund manager, you may issue whatever combination number and type of coins you like right in the command line, representing whatever business activity you like for each tier -- just remember to sort them by risk. LX coins are held in contract, and exchangeable only for underlying A/R coins (See the table below, and contract details further down.)
 
 ##Choose your fund's risk profile
 Whatever business activities are creating your profits, rank them by riskiness into one of the categories below. Then decide what percentage of your total funding will go to each activity; that is, what mixture of coins you'd like to issue. Some people may only issue one tier of coins, while others will be active in all six tiers.
@@ -192,13 +193,11 @@ VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https:
 * Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
 * It also has its own Lx... coin representing the average value of its other tiers, and an Lx address for these coins, and may issue its Lx... addresses to other funds, just like any other fund.
 ###The Fund LX Exchange Contract
-All funds in a VMF, including the central bank, have their own LX Exchange Contract. This contract address receives A/R tier coins from their blockchain, which are held in escrow, and returns Lisa coins for the sender to use and circulate within the Fund (or to any external group that has been given a fund address by this Fund's manager.) 
-* Also connected to the Lisa chain, like all funds; has its own Lisa address; it can also trade with other funds in Lisa
-* A central bank may transact with another central bank (ie., someone who deployed the VMF project themselves) using ether
+All funds in a VMF, including the central bank, have their own LX Exchange Contract. This contract address receives A/R tier coins from their own Fund investors, holds it in escrow, and lends out that fund's LX coins for the sender to use and circulate within the Fund (or to any external group that has been given a fund address by this Fund's manager.) 
 
 ##How the central bank (parent fund) is different
 The central bank does two things:
- 1. Initializes the Lisa Exchange Contract. At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
+ 1. Initializes the **Lisa Exchange Contract.** At the genesis of a VMF, the parent fund (central bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract" and tradeable for each fund's LX, plus 100 percent collateral in R-tier coins.
   * This exchange contract address is available to the entire Lisa chain, even the central bank itself
   * Upon receiving Lx from any one of the 250 funds in its network, this contract sends back the equivalent amount of Lisa and holds that fund's LX in escrow
    * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
