@@ -1,7 +1,8 @@
 
 # Member-Investor Node
-## Underpins the Flux Mobile Wallet app for ANDROID
-This app is intended for two groups of users. The first, logged-out users, may just want to create a Lisa wallet to receive (and hold, and send) some Lisa coins from a friend. Logged in users have access to all their Iterative Instinct investments, marked to market in 1-second intervals (ie., the blocktime of the Tendermint consensus engine).
+
+## Underpins a Mobile Wallet app for Android
+This node is the core of an Android application is intended for two groups of users. The first, logged-out users, may just want to create a Lisa wallet to receive (and hold, and send) some Lisa coins of a given VMF. Logged in users have access to all their VMF investments, marked to market in 1-second intervals (ie., the blocktime of the Tendermint consensus engine). The front end, branding, and deployment of this node must be developed by the Central Banker.
 
 ### Functional Spec
 * Runs a full Lisa chain & A/R chain nodes on a smartphone
