@@ -14,73 +14,123 @@ First, it's important to remember what software does well: it scales, and it dis
 
 This absurd scenario makes light of the fact that financial technology problems -- unlike the rest of humanity's problems -- do not improve as the software scales. In fact, the better the software gets at scaling, the bigger the moral hazard gets.
 
-This owes to limits to biological scaling in our own primate brains. Dunbar's Number is around 250: the maximum number of human souls you can conceivably love and understand as three-dimensional beings. So, it would be very hard to keep your fiduciary duty to over 250 investors, being that your brain gives less shits the larger the pool gets. This is the situation Wall Street finds itself in today.
-
-Banks need to be able to manage large amounts of money without growing to the size where the customer becomes a depersonalized entity: a row in a spreadsheet instead of Mrs. Jones down the block. How can blockchain help?
+This makese sense with what science knows about the biological limits to scale in our social networks. Dunbar's Number is around 250: the maximum number of human souls you can conceivably love and understand as three-dimensional beings. A good crypto-financial system would accomodate this biological handicap without encouraging tribalism; a great crypto-financial system would allow groups to interact, trade, and compete with one another under the aegis of a provably fair referee.
 
 ###The role of UX in this solution
-Today, banks organize themselves in ways that are convenient for them, and force customers to manage the complexity. In a pure software bank, having different types of accunts doesn't mean you need to deal with different "units" of the bank, or be "transferred" to another "department." A blockchain based Fund uses the same interfaces as its customers, so it's easy for everyone.
+Today, banks organize themselves in ways that are convenient for them, and force customers to manage the complexity. Having different types of accunts forces you to deal with different "units" of the bank, or be "transferred" to another "department" which is probably running an entirely separate set of databases. 
 
-Picture this: In a pure software bank, we can create nested arrays of accounts which allow individuals and groups to manage thousands of individual piles of money, mostly in an automated way. As people flee from mainstream economic vehicles denominated in USD, they may find themselves participating in many Funds (in an attempt to diversify). So an individual human being might have ~1,000 individual wallet addresses distributed across 142 different funds. 
-
-But in his Flux wallet app, these are simply cells in a table that he can evaluate easily. Try managing 1,000 different accounts with legacy banks or financial services companies offering "online account management" of ETFs, stocks, mutual funds, savings accounts, CDs, money market accounts, business checking, operating accounts, expense accounts, and so on... all from a single app. You would need hundreds of accountants, which is what businesses must hire today.
-
-All of this equals more customer funds under management and more investible capital, thanks to huge overhead savings on salaries and real estate. Similarly, there is no need for FDIC in a crypto-ecosystem, so wallet accounts may grow artibrarily large dollar amounts without creating additional risk. A single fund of 250 member-investors who are entirely invested in that Fund could easily grow to $1B in size with an average member net worth invested of $4M per person. With the number of multi-millionaires and billionaires on Earth, the most elite VMFs could easily be $100B and operate with the same exact rules and contracts as a 250-person town micro-economy in Greenland using the same technology.  
+A private, permissioned blockchain-based financial institution can use the same interfaces as its customers, and its databases so they get the same visibility into transaction data. And thanks to the Merkle Root algorithm, assets can be marked to market in real time. In a pure software bank, everything is transparent -- much too transparent. Behind a walled garden this might be fine; say within a few dozen members of a family. But your friends and relatives aren't exactly an "economy" in and of themselves.
 
 ###Approach to a solution
 Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away."
 
-The VMF platform uses incentives and disincentives both social and monetary to create a scalable system for transparent investment funds. We begin by imagining an "economy" comprised of many funds. Inter-fund transactions are governed by a provably fair Central Bank. When an economy reaches the outer limits of its size, the most successful fund managers may naturally depart and create their own Central Banks, creating platform for a new funds. 
+The VMF platform uses incentives and disincentives both social and monetary to create a scalable system for transparent investment funds. We begin by imagining an "economy" comprised of many "child funds" all on equal footing. Each Fund has a Fund Manager, one human being with a fiduciary duty to the friends, family, and colleagues who let him manage their money; this person has a legal entity in the "real world" and is regulated. But he keeps his assets, and all customer funds, on a private blockchain hard-coded limit of 250 wallet addresses, so that his investors can see their positions at all times. The value of his positions are updated by oraclized endpoint, whether from a crypto-wallet, crypto-bank such as Uphold, or for mainstream equities, a traditional portal like the ETrade API.
 
-In this architecture, there are three kinds of human participants: the Central Bank admins, the Fund admins, and the member-investors of the Funds.
+### Wallet Issuance
+Each private chain ("Fund") has room for 250 entities. The Fund Manager's duty is to invite 250 solvent, responsible, and wealthy individuals to the Fund. The wallet addresses may be issued to discrete human beings; a head of household or some other such trustee; or another Fund Manager. Because these wallet addresses are preferential, we will call them "wallet-passports," in that they confer similar "value" of being a member of a privileged, private economic group. 
+
+At this stage in the thought experiment, leave aside in your mind the issue of which cryptocurrency is being exchanged; that will be addressed below. Assume it is an ideal, perfectly stable asset; we'll solve the problem of volatility separately below.
+
+## How "child funds" Interact
+Because one Fund Manager can issue another Fund Manager a wallet-passport, Funds may take positions in one another as a hedge against their own management skills. This is good, because it encourages pro-social investment from one community in another; a more-zero sum solution might end up with one group arming to rob (whether by 51 percent attack, or physical means) the blockchain bank of another group. 
+
+Our utopia seems to be struggling. For one thing, each Fund must be sound and solvent or the whole system will come crashing down. And for another, we haven't solved the issue of whose coins to trade in. Why? Because none of us want to hold huge amounts of savings in bitcoin or ether, owing to its volatility. So we have to solve three big problems:
+
+1. What coin would 250-person crypto-economies use to trade with one another?
+2. How could these 250 people "save" their money or do any financial planning in a crypto-economy when public-chain currencies like BTC/ETH are so volatile? 
+3. How do we tell a "good" Fund from a bad one?
+
+### Sweet home USD
+The USD is a managed currency, albeit horribly mismanaged, that offers some attractive features *prima facie.* Because of its constant, soul-sucking, savings-destroying (quantitative) inflationary tendencies, it makes debt shrink, and in some small way (though not to the extent Keynesians would have us believe) this does encourage people to invest their money in something worthwhile instead of letting it sit. 
+
+We believe these features of a currency are attractive enough to pursue cryptographically, but only if we can find another price mechanism unlike the extortative Petrodollar recycling scheme (that combined with T-bond sales) props up the price of the USD today.
+
+Such a currency would need to be administered by a provably fair referee: a central bank that would hold assets in reserve, backing some common coin that Funds could pass around as units of account. Importantly, this coin would need to have a one-time issuance and some guarantee of no further issuance; in practical, these are the rules of an open source protocol in the making, so that licensing a given "economy" means consenting to certain hard coded-rules, such as the 250-member limit on member-investors. 
+
+If a central banker can manage his reserves responsibly, the liquid coin used by his funds will appreciate. This principle is also true of child funds; good management of the underlying assets means any coins a fund issues will appreciate to reflect the improved value of the underlying, plus some premium for demonstrably good management. Now we are getting somewhere! 
+
+But we still haven't solved problems our three problems. And let's be real -- there are lots of other obstacles to creating an economy, so let's hammer through the rules of the system in more specific terms. 
 
 ###How it works
-The Central Bank has one job: get good Fund Managers on the platform. The Fund Manager, in turn, has one basic job: to incorporate wealthy and honest citizens into their Fund by issuing them a wallet address. This is the primary responsibility of the managers of a given Fund: to choose who can be in it. Secondarily, they manage the money of those who enter the Fund, and try to grow its value in various ways.
+The Central Banker has one job: get good Fund Managers on the platform. The Fund Manager, in turn, has one basic job: to incorporate wealthy and honest citizens into their Fund by issuing them a wallet address. This is the primary responsibility of the managers of a given Fund: to choose who can be in it. Secondarily, they manage the money of those who enter the Fund, and try to grow its value in various ways.
 
-###Management powers
-In addition to admitting members, the managers are in charge of active management of their portfolio. They are incentivized to hold and grow the value of the coins they issue in various ways. Fund managers may diversify holdings by trading coins with another Fund community on behalf of their members out of a common pool by incorporating another Fund as a citizen (ie., issuing the outside group a single wallet address). However, inside a Fund it is strictly a one-person, one-wallet address system.
+Each private fund has its own permissioned blockchain with the ascribed 250 wallet addresses. Each fund is also connected to the Central Bank's main chain, where it can exchange the liquid coin issued by the Central Bank with other funds. Superficially, this is a solution to problem #1, whose coin Funds should trade in. That's because it removes the possibility that coins backed by one Fund might become valueless if that Fund made bad investments and subsequently collapses. An economy where you can't trust the currency your neighbor pays you is not a stable economy. 
+
+We are hitting on the bedrock of problem #2: people need to trade in a stable currency, managed by some trustworthy entity they know isn't quantiatively easing the money supply and thus destroying peoples' savings, incentivizing debt at interest, and inflating the prices of small business goods and services. 
+
+However, there is good news: in our parent fund / child fund architecture, if we solve the problem for one, we solve it for all. Let's begin with who gets into a VMF, which is a catch-all term to describe a crypto-economy as deployed using our tools, under one person who begins by capitalizing the Central Bank. 
+
+###Management powers and responsibilities 
+In addition to admitting members, the Fund Managers are in charge of active management of their portfolio. In a crypto-fund, any asset or position can be represented by a coin issued by the Fund. In our architecture, all Funds -- including the Central Bank -- are architected in six (6) tiers of assets. Anyone who licenses our software may choose to create and capitalize their own central bank, or deploy a Fund under the aegis of an existing Central Banker. That interaction, agreement, and vetting process must happen in the meatspace, just as these individuals need to file proper fund formation documents in the real world. 
+
+Fund Managers and Central Bankers are incentivized to hold and grow the value of the coins which may represent literally any underlying asset or activity on Earth. (As long as there's an API endpoint we can oraclize to get a balance, we can inventory it in on the blockchain. Though admittedly the joys of real-time marking-to-market are only available for native crypto-assets such as DGD, for precious metals, for appcoins and altcoins, and to a lesser extent for Fx.)
 
 ###Trust
-When joining a Fund, think of the TSA rules: never let a stranger pack your financial bags. Entering a VMF means you're entrusting value to a human manager who will have freedom to invest as they see fit. If his or her skills as a market-maker are sub-par in the mainstream economy, a Fund will simply lose their money faster. This is a kit for knowledgeable asset managers.
-
-###Impact
-Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The Fund model allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. **More importantly, it allows brands, schools, non-profits, developing governments, and other small organizations to offer safe, cheap, and transparent financial services to their members.**
+When joining a Fund as a member-investor, or by starting a Fund under a Central Banker, think of the TSA rules: never let a stranger pack your financial bags. Entering a VMF means you're entrusting the value of your hard work to a human manager who will have freedom to invest as they see fit. If his or her skills as a market-maker are sub-par in the mainstream economy, a crypto-asset instrument will simply lose their money faster. The kit specified below is designed for knowledgeable asset managers but requires only basic programming skills.
 
 #The Central Bank
-VMF structure is loosely modeled on the IMF, its [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, and its XDR instrument. The model has been modified to suit a different purpose: stable appreciation, rather than just *prima facie* stability. This new model creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain (ie., immutability as a backstop for fund managers). We believe it is the ultimate safe haven network. 
+To solve the problem of a stable Central Bank issue currency, we draw especially on the IMF, its oddly named [Special Drawing Rights](https://en.wikipedia.org/wiki/Special_drawing_rights) basket, with the accompanying SDR/XDR instrument. The model has been modified to suit a different purpose: stable appreciation, rather than just stability. This new model creates many of the benefits of the Petrodollar (debts shrink; savings grow) without the (quantitative) inflation and subsequent price inflation in the small business arena. Transparency in all ways is what makes this whole thing work, hence the blockchain.
 
 ## Just like any other Fund
-* Structured like the other funds, in six tiers, the Central Bank (parent fund) has six of its own wallet addresses for its own A0, A1, A2, R, R0, and R1 activities. These obey the same rules as all other funds (the 250-address limit, for example, limits every central bank to 250 funds, just as every fund is limited to 250 members). 
-* It also has its own LX coin representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund.
-* The central bank must also contribute to the stake pool equaling at least $10,000 USD or 10 percent of its AUM, whichever is larger, just like **every other fund in a VMF.** This covers outstanding LX and Lisa instruments in circulation, as explained below.
+Every fund including the central bank issues 7 of its own coins, while participating communally in the 8th, which is issued by the central bank but backed by assets managed by all or most of the participating Funds. How this reserve system functions will become apparent further below. For now, we'll focus on the structure of a Fund. Both the Central Bank and the 250 Funds it governs are structured the same way.
+* Every Fund including the Central Bank has six tiers of "assets" representing an arbitrary sorting of activities and assets by risk, from least risky to most risky. Thus, each Fund and Central Bank has its own wallet addresses for its own A0, A1, A2, R, R0, and R1 coins, representing its own underlying activities. The A- and R- designations are purely risk stratfications. 
+* It is up to the Fund Managers (and the Central Banker, for the assets under his management) to decide what investment or commercial activity to engage in, and how to categorize their risk level. 
+* It is up to Fund Managers how many coins to issue, and at which tiers. They can issue 100,000,000 coins at just one tier, or 100,000 evenly across all six tiers. Whether their actual investment activity lines up to the API endpoint that marks their asset-value to market is a question not of trust, but of verification, as Oraclized endpoints can be cryptographically matched to the server that issued the API key for that given equity trading account. This provides insurance the Fund Manager actually owns the accounts and wallet addresses he claims to.
+* It is up to the sales skills and trustworthiness the face value of the coins he will be able to sell to investors to represent a share of his asset management activities. Inexperienced asset managers may not be successful at raising funds to capitalize a Fund or Central Bank without demonstrable success in a related discipline.
+* Each Fund including the Central Bank also has its own LX coin ("index coin") representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund. This coin is backed by redeemable assets and may only be circulated when underlying assets are held in escrow in a smart contract, as detailed below.
+
+For the rest of this explanation, a "Fund" will serve to mean both a Fund and/or its Central Bank. A "VMF" means a group of Funds under a provably fair Central Bank.
 
 ## The Fund A/R Exchange Contract
-All funds in a VMF, including the central bank, have an A/R Exchange Contract which will turn A-tier coins into the equivalent value of their own R-tier coins, and visa-versa. These coins are not transmissable outside a given fund, but may be sold and exchanged between member-investors within a Fund. 
+Remember that A- and R-tier coins may represent any activity, for example, trading, arbitrage, the holding of precious metals, altcoins, and the holding of equities and assets both mainstream and crypto. All Funds share a common challenge in turning these investments and activites into a backable currency which they can then exchange with one another. 
 
-Why would anyone exchange A-tier coins for R-tier coins? Because R-tier coins are the only ones allowed to back a fund's LX instrument, which is the "index" coin that tracks the performance of that particular fund. Of course, every member-investor of a fund gets an LX address upon signup and acceptance. But Fund Managers may also choose to issue LX addresses to other funds. Even so, these LX coins have yet larger uses: read on!
+Thus, all Funds in a VMF have an A/R Exchange Contract which will turn A-tier coins into the equivalent value of their own R-tier coins, and visa-versa. These coins are not transmissable outside a given fund, but may be sold and exchanged between member-investors within a Fund.
+
+### Backing coins with R-tier
+Why would anyone exchange A-tier coins for R-tier coins? Because R-tier coins are the only ones allowed to be held as collateral for a fund's LX instrument, which is the "index" coin that tracks the performance of that particular fund. This has the fringe benefit of isolating Fund Managers who issue Of course, every member-investor of a fund gets an LX address upon signup and acceptance. But Fund Managers may also choose to issue LX addresses to other funds. Even so, these LX coins have yet larger uses: read on!
 
 ## The Fund LX Exchange Contract
-All funds in a VMF, including the central bank, have their own LX Exchange Contract address. Every fund also has LX coins issued and held 100 percent in-contract when its blockchain begins. This contract address will release these LX coins if sent collateral. Let's look at how this works. 
+All Funds in a VMF deploy a standard LX Exchange Contract address. Every fund also has LX coins issued, and held 100 percent in this contract, when its blockchain begins. This contract address will release these LX coins if sent the proper collateral. Let's look at how this works. 
 
-The LX Exchange Contract for this fund receives an R (bitmetal reserve) coin, which should be relatively price stable, and places it in escrow. In turn, it automatically lends out that fund's LX (index) coins to whomever the `msg.sender` of the R coin was. This LX may be then be sent as payment to other member-investors, or held by another Fund as an investment. Another common use will be in backing Lisa coins, in the contract below.
+The LX Exchange Contract for this fund only receives an R-coin (bitmetal reserve) which should be relatively price stable, and places it in escrow. The endpoint deliering the value of the asset underlying this asset must provably be metals; for example, a balance of gold held in Uphold, or some DGD in an Ethereum wallet address. 
 
-### How Lisa Coins Are Issued
-At the genesis of a VMF, the parent fund (Central Bank) issues a hard-coded number of 100,000,000 Lisa, which is held 100 percent in an "exchange contract." Both Funds and the Central Bank must send ~100 percent (+/-1) collateral in R-tier coins to the LX contract to borrow Lisa and put those coins into circulation.
-  * This exchange contract address is available to the entire Lisa chain, even the central bank itself
-  * Upon receiving LX from any one of the 250 funds in its network, this contract sends back a request for 100 percent (+/-1) in R-tier coins
-  * The user must reply by sending that amount of R-tier coins as collateral; both the R-tier collateral and the LX coins are held in escrow by the contract
-  * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins, and the R-tier coins being held as collateral
-   * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
+When this contract receives an R-coin to hold, it automatically sends out that fund's LX (index) coins to whomever the `msg.sender` of the R coin was. This LX may be then be sent as payment to other member-investors, or held by another Fund as an investment who was issued a wallet address for the Fund. Another common use will be in backing the common "liquid-tier" coin which allows Funds to do business with each other. 
 
-## The Lisa Exchange Contract 
-In order to trade with one another universally, Fund Managers will probably use Lisa coins. (Fund Managers who know each other, and have formed a syndicate, might issue one another's Funds a wallet address in their own fund's LX coin, and those pass LX coins back and forth.) But the Lisa coin will be most commonly circulated, itself "backed into" circulation by someone's LX and R-tier collateral, plus the value of their stake in the ETH stake pool.
+### How the Central Bank's common currency works
+At the genesis of a VMF, the parent fund (Central Bank) issues a hard-coded number of 100,000,000 liquid-tier coins we will affectionately call "lisa," a nice bastardization of "lira." The 100,000,000 lisa coins are held 100 percent in an "exchange contract." Both Funds and the Central Bank must send ~100 percent (+/-1) collateral in R-tier coins to the LX contract to borrow Lisa and put those coins into circulation. Here is the actual contract flow:
+  * An exchange contract address is made available to the entire Lisa chain (both Fund Managers and regular Member-Investors) when the Central Bank starts the chain
+  * Upon receiving an arbitrary amount of LX coins to hold, in escrow, from any one of the Funds or Member-Investors in its network, the contract then sends back a request for 100 percent (+/-1) in R-tier coins
+  * The user must reply by sending that ~100 percent collateral in R-tier coins; now 200% the value of the issued Lisa coins are held, both R-tier collateral and LX coins, in escrow by the contract
+  * The contract returns a "redemption address" where the member-investor can send their Lisa when they're done, releasing their LX coins and R-tier coins back to their wallet
+   * If the value of the Fund's LX coins decrease against the Lisa while they are held in contract, the contract debits the amount is debited from the R-tier collateral and held by the contract; if the value of the fund's LX goes up against the Lisa, the amount is credited back.
 
-## Limits on Outstanding LX and Lisa
-A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well. What happens then?
+# Why are we doing this again?
+At last, we have the beginnings of a stable instrument that Funds can transfer between one another. Again, this isn't foolproof: if a Central Banker lets in crappy Fund Managers, it only takes one or two to scuttle an entire VMF. So as sophisticated as smart contracts might sound, they are not, and never will be, a replacement for good sense or other oldies-but-goodies such as the English Common Law system. This system of private crypto-economies is intended to serve purely as a kit, deployable by any individuals, for rescuing their wealth from mainstream or fiat instruments of all kinds.
+
+Luckily customers won't see any of this complexity, or the true state of pending economic crisis that warrants the invention of this system. Comforting people during this time of transition is just as essential as empowering them to become their own bank and take ahold of their wealth for themselves, by entrusting its management to a series of Fund Managers they trust, perhaps even Funds managed under different Central Bankers.
+
+As you'll see below, comfortable UX plays into the way we daisy chain these contracts to behave just like the currencies and banking systems that we're used to. In fact, as you'll notice from the contract above, the exchange is a fairly manual process. We don't believe people are ready for auto-debit contracts that perform complex conversions. We're dealing with real value here -- peoples' savings and retirements -- so this system purposely seeks to replicate a select few of the useful conventions of old-fashioned savings and loan banking.
+
+## The importance of the Lisa Exchange Contract and its Stake Pool
+In order to trade with one another universally, Fund Managers inside a VMF will probably use the Lisa coins of that VMF. Lisa coins are not fungible between VMFs. Fund Managers who know each other, and have formed some sort of syndicate either inside a single VMF or across VMF boundaries, might issue one another's Funds a wallet address in their own fund's LX coin, and those pass LX coins back and forth as a way of investing in an "index" of that Fund. But the Lisa coin will be most commonly circulated among member-investors, itself "backed into" circulation by someone's LX and R-tier collateral, plus the value of their stake in the ETH stake pool.
+
+All Funds including the Central Bank must contribute to the stake pool equaling at least $10,000 USD or 10 percent of its AUM, whichever is larger. This covers outstanding LX and Lisa instruments in circulation, as explained below.
+
+## Stake Pool Contract, and limits on outstanding LX and Lisa
+A scenario might arise where a member-investor sends another member-investor some Lisa as payment for an item. Suddenly and without warning, the value of the LX being held in escrow for the outstanding Lisa plummets in value! No worry, that's what the 100 percent collateral, held in any of the trusty R-tier coins, is there to insure against. But then, the value of those R-tier coins drops as well; perhaps the price of gold has randomly plummeted. What happens then?
 
 Should the value of voth the R-tier coins and the LX coins stay below 10 percent of earlier value for more than 96 hours, then the LX and R-tier coins being held in the LX Exchange Contract are joined in escrow by the equivalent amount of ETH from the stake pool. This situation remains, marked to market every 24 hours, until the value of the underlying LX and R-tier asset returns.
 
 For this reason -- to ensure the price stability of the Lisa -- the value of outstanding LX for any given Fund may not exceed the value of their initial stake (either $10,000 USD in ETH or 10 percent of AUM, whichever is larger) that they submitted when launching their fund, and which is being held in the stake contract.
+
+##How Central Banks do business
+As described above, Funds might do business with other Funds in either LX or Lisa coins, depending on the arrangement. But how do Central Banks do business? In BTC, ETH, ETC, Monero, or any other public chain. In all likelihood, they'll already have these coins as part of a long crypto-position inside their fund. But more importantly, both Central Bankers and Funds must buy ether and send it to an address in order to instantiate a new Fund or Central Bank.
+
+We believe in the Federal system of government, despite its degradation at the hands of the Federal Reserve. We believe in privacy, but not total anonymity, which creates incentives for bad actors. Wallet-passports tie real names and KYC information held on-chain by Fund Managers, but names are not associated publicly with wallet addresses. So while **all member-investors can see all transactions inside their Fund(s) they will probably not know which addresses belong to which individuals** unless they have done business with that wallet address directly.
+
+Outside of a Fund, there is zero visibilty inside. Only a Central Banker and Fund Manager can see which wallet addreses belong to which individuals, but they are powerless to move anyone's funds without their permission.
+
+From here, this guide increases in specificity as it turns into a tutorial. This tutorial is also a functional spec for our development team.
 
 #Software components
 0. Central Bank CLI daemon/node (free and open source)
@@ -96,13 +146,17 @@ For this reason -- to ensure the price stability of the Lisa -- the value of out
 * six Ethereum addresses 
 * $10,000 USD minimum or 10 percent of fund assets AUM in ETH to be held in escrow contract as stake (fully refundable)
 
-In the beginning, someone instantiates a VMF by running the Central Bank daemon. This generates the main chain shared by all funds in a given VMF network. This is the liquid tier chain, also known as the L-tier chain or Lisa chain. Next, they must recruit entrepreneurial Fund Managers who want to join the platform. They do this by running the Fund Daemon and starting a new fund. This Fund exists on its own blockchain, but is also connected to the Lisa chain.
+In the beginning, an aspiring central banker instantiates a VMF by running the Central Bank daemon. This generates the main chain shared by all funds in this new VMF network. It is the liquid tier chain, also known as the L-tier chain or Lisa chain. In so doing, this newly-minted banker is agreeing to the terms of the license  set forth in this Github project; namely the GNU Affero License. 
+
+Next, they must deploy their capital and begin managing their positions. How they do that is entirely up to them. The Central Bank daemon will ask them for the API endpoints and private keys of those endpoints, in order to represent wallet balances. It also provides endpoints for these balances, which a mobile wallet (for example) might be able to poll. All the interfaces (both customer and Fund Manager) must be built custom by the Central Banker. 
+
+Once up and running the Central Banker must recruit entrepreneurial Fund Managers who want to join the platform. Once he has gotten a Fund Managers to agree to raise a fund under his VMF, the new Fund Manager may do this by running the Fund Daemon and instantiating a new fund. This Fund exists on its own blockchain, but is also connected to the Lisa chain started by the Central Bank.
 
 ##Specification for Central Bank and Fund Nodes
-This CLI node can be deployed on a **Docker instance** (required for ErisDB) and connects to our initial peers at Iterative Instinct. 
+This CLI node can be deployed on a **Docker instance** (required for ErisDB) and connects to initial peers set by the Ur-Central-Bank, also known as Iterative Instinct, the creators of this project. This architecture is built on the Tendermint protocol with Eris Industries open source tools. 
 
 ###Creating a Central Bank
-Once you've fired up the Central Bank Daemon on your VPS, it will connect with seed peers and begin a new Lisa chain. Then the CLI node allows fund administrators to setup their fund as follows:
+Once you've fired up the Central Bank Daemon on your VPS, it will connect with seed peers at Iterative Instinct and begin a new Lisa chain. Then the CLI node allows fund administrators to setup their fund as follows:
 * The new Central Bank will be issued the first Lisa wallet address.  
 * Next, the fund manager must enter his information. This Lisa address will turn into a Fund Manager object containing attributes: six ethereum addresses from an existing Mist wallet, labeled for the six actively managed tiers A0, A1, A2, R, R0, and R1; full legal name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL
   * Fund manager must then create a password
@@ -111,13 +165,13 @@ Once you've fired up the Central Bank Daemon on your VPS, it will connect with s
 
 ###Creating a Fund under an existing Central Bank (similar)
 Once connected to the network, the CLI node allows fund administrators to setup their fund as follows:
-* New fund manager can use the CLI to instantiate a new wallet address on the liquid-tier chain (nickname: Lisa chain) which is the chain shared by all funds. (Anyone on Earth may obtain a Lisa wallet address with the Flux mobile app.)
-  * Next, the fund manager must enter his information. This Lisa address will turn into a Fund Manager object containing attributes: six ethereum addresses from an existing Mist wallet, labeled for the six actively managed tiers A0, A1, A2, R, R0, and R1; full legal name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL
+* New fund manager can use the CLI to instantiate a new wallet address on the liquid-tier chain (nickname: Lisa chain) which is the chain shared by all funds. *The Central Bank is responsible for creating a mobile wallet app to hold its Lisa coins. Lisa coins are not transferrable between VMFs. People doing business with strangers outside their VMF should transact in ether, bitcoin, monero, or another public chain coin.*
+  * Next, the fund manager must enter his KYC information. This Lisa address will turn into a Fund Manager object containing attributes: six ethereum addresses from an existing Mist wallet, labeled for the six actively managed tiers A0, A1, A2, R, R0, and R1; full legal name, company, URL, keybase key, address, phone, email, user@handle, SSN/EIN, and image URL
   * Fund manager must then create a password
   * Fund manager must enable two-factor phone number authentication (use Eth proof of phone project?)
   * After this is done, proceed to "the stake pool contract" below.
 
-###The stake pool contract
+###Sending ether to the stake pool contract
 In order to launch a Central Bank or a new Fund, you'll need to add collateral (ETH) to to a stake pool contract. This is to protect the price of Lisa in the event that your fund collapses while it has LX and/or Lisa coins backed by its assets in circulation amongst other funds. The amount of this stake in ETH should be equivalent to $10,000 USD minimum or 10 percent of fund assets AUM in ETH (whichever is more) to be held in escrow contract as stake (fully refundable). Contact partners@iterativeinstinct.com for more information on staking, and to get the stake pool contract address for the Iterative Instinct VMF.
 
 ###For Central Banks: get your wallets
@@ -256,12 +310,13 @@ Once the Fund Manager has decided which tiers to issue, he must next decide how 
    * This contract listens for deposits in your six ethereum addresses labeled A0, A1, A2, R, R0, and R1 and returns a message over RPC to look for the txn.sender address among the member-investor objects
     * If/when found, give the appropriate amount of coins from that tier to that member-investor
 
-#### Notes
-* Fund managers may issue other funds wallet addresses with same info above
-* Central bank will need to deploy a bunch of its own Docker instances for seeds (initial peers to connect to. e.g. "addr1:46656,addr2:46656") to secure the Lisa chain, and secure all 250 fund chains
+###Impact
+Modern fiat instruments, and the banks that hold them, make for poor long-term savings vehicles. Professional wealth management is not available to most people. The Fund model allows groups of individuals to hedge their salaried work in the “mainstream economy” by saving their earnings in an alternative system that is disconnected from bank woes and currency manipulation. **More importantly, it allows brands, schools, non-profits, developing governments, and other small organizations to offer safe, cheap, and transparent financial services to their members.**
 
 ####The 250 entity limit
-If 250 investors sounds like a tiny bank or fund by present day standards, consider that the account-to-human ratio is about to reverse. That is to say: today, banks require *at least* one account per customer. In fact, many customers have several accounts with one bank (savings, checking, money market, business checking, and so on) which all represent different lines of business for the bank: different departments. In a VMF, it's much more likely that family members (parents and kids; spouses; entire families) will all operate inside the same VMF for simplicty's sake (ie., they can pay each other in the same Lisa coin). Consider also that, for legal reasons, initial deposits into a Fund must be made in ETH, which most people are not carrying around each day. One family member or friend can give a relative USD to invest in one big ETH purchase without fear they won't see their money come back -- simply by creating a smart contract denominated in Lisa coins in which the relative pays them out the balance over `i` payments in a loop where `p` equals the principle `for (i = 0; i > (p / i); i--)`. Such contracts will be available off the shelf in the mobile wallet app. This one is called an "annuity contract."
+If 250 investors sounds like a tiny bank or fund by present day standards, consider that the account-to-human ratio is about to reverse. That is to say: today, banks require *at least* one account per customer. In fact, many customers have several accounts with one bank (savings, checking, money market, business checking, and so on) which all represent different lines of business for the bank: different departments. In a VMF, it's much more likely that family members (parents and kids; spouses; entire families) will all operate inside the same VMF for simplicty's sake (ie., they can pay each other in the same Lisa coin). 
+
+Consider also that, for legal reasons, initial deposits into a Fund must be made in ETH, which most people are not carrying around each day. One family member or friend can give a relative USD to invest in one big ETH purchase without fear they won't see their money come back -- simply by creating a smart contract denominated in Lisa coins in which the relative pays them out an evenly-divisble balance over `i` payments in a loop where `p` equals the principle `for (i = 0; i > (p / i); i--)`. Such contracts will be available off the shelf in the mobile wallet app. This one is called an "annuity contract."
 
 With such a smart contract, family trust issues are removed, and they can each funnel dollars to the Fund Manager through the same "head of household" who buys the ETH outright. 
 
