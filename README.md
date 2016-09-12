@@ -21,7 +21,7 @@ Today, banks organize themselves in ways that are convenient for them, and force
 
 A private, permissioned blockchain-based financial institution can use the same interfaces as its customers, and its databases so they get the same visibility into transaction data. And thanks to the Merkle Root algorithm, assets can be marked to market in real time. In a pure software bank, everything is transparent -- much too transparent. Behind a walled garden this might be fine; say within a few dozen members of a family. But your friends and relatives aren't exactly an "economy" in and of themselves.
 
-###Approach to a solution
+###Approach
 Many cryptocurrency maximalists have attempted to build “trustless” global systems where software can somehow isolate bad actors. This belies the natural fact that trust between small groups of humans is foundational to civilization, and that moral hazard cannot be “engineered away."
 
 The VMF platform uses incentives and disincentives both social and monetary to create a scalable system for transparent investment funds. We begin by imagining an "economy" comprised of many "child funds" all on equal footing. Each Fund has a Fund Manager, one human being with a fiduciary duty to the friends, family, and colleagues who let him manage their money; this person has a legal entity in the "real world" and is regulated. But he keeps his assets, and all customer funds, on a private blockchain hard-coded limit of 250 wallet addresses, so that his investors can see their positions at all times. The value of his positions are updated by oraclized endpoint, whether from a crypto-wallet, crypto-bank such as Uphold, or for mainstream equities, a traditional portal like the ETrade API.
