@@ -79,6 +79,86 @@ Every fund including the central bank issues 7 of its own coins, while participa
 * It is up to the sales skills and trustworthiness the face value of the coins he will be able to sell to investors to represent a share of his asset management activities. Inexperienced asset managers may not be successful at raising funds to capitalize a Fund or Central Bank without demonstrable success in a related discipline.
 * Each Fund including the Central Bank also has its own LX coin ("index coin") representing the average value of its other tiers, and may issue its LX wallet addresses to other funds, just like any other fund. This coin is backed by redeemable assets and may only be circulated when underlying assets are held in escrow in a smart contract, as detailed below.
 
+
+<table>
+  <tr>
+    <td>Coin</td>
+    <td>Layer Description</td>
+    <td>Risk Profile</td>
+  </tr>
+  <tr>
+    <td>A0</td>
+    <td>Misc. Day Trading</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td>A1</td>
+    <td>Commercial Operations</td>
+    <td>High</td>
+  </tr>
+  <tr>
+    <td>A2</td>
+    <td>Interval Trading</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>A3</td>
+    <td>Arbitrage</td>
+    <td>Medium</td>
+  </tr>
+</table>
+
+Reserve Tier coins **must equal at least 34 percent** of total coin issuance
+
+<table>
+  <tr>
+    <td>Coin</td>
+    <td>Layer Description</td>
+    <td>Risk Profile</td>
+  </tr>
+  <tr>
+    <td>R</td>
+    <td>Precious metals</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>R0</td>
+    <td>Long positions</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>R1</td>
+    <td>Staking Nodes</td>
+    <td>Medium</td>
+    </tr>
+  <tr>
+    <td>R2</td>
+    <td>Fiat Reserves</td>
+    <td>Very Low</td>
+  </tr>
+</table>
+
+
+### Liquidity Tier 
+
+<table>
+  <tr>
+    <td>Coin</td>
+    <td>Description</td>
+    <td>Risk Profile</td>
+  </tr>
+  <tr>
+    <td>LX</td>
+    <td>Stable-coin specific to this fund, and redeemable for the above tiers. Gets its value from the sum total basket average. Value shown in Lisa/XDR.</td>
+    <td>Risk average of entire fund</td>
+  </tr>
+  <tr>
+    <td>Lisa</td>
+    <td>Stable-coin usable across all the L-chain which connects all funds in this VMF instance. Value pegged to XDR.</td>
+    <td>Low</td>
+  </tr>
+</table>
+
 For the rest of this explanation, a "Fund" will serve to mean both a Fund and/or its Central Bank. A "VMF" means a group of Funds under a provably fair Central Bank.
 
 ## The Fund A/R Exchange Contract
@@ -217,86 +297,7 @@ As a fund manager, you may issue whatever combination number and type of coins y
 Your fund may issue as many LX coins as it likes, with the same minimums and maxiumums as the other tiers. The difference is that **all LX coins are held in contract** and are put in circulation only once R-tier coins have been put up as collateral (See the table below, and more contract details and limits further down.)
 
 ##Choose your fund's risk profile
-Whatever business activities are creating your profits, rank them by riskiness into one of the categories below. Then decide what percentage of your total funding will go to each activity; that is, what mixture of coins you'd like to issue. Some people may only issue one tier of coins, while others will be active in all six tiers.
-
-<table>
-  <tr>
-    <td>Coin</td>
-    <td>Layer Description</td>
-    <td>Risk Profile</td>
-  </tr>
-  <tr>
-    <td>A0</td>
-    <td>Misc. Day Trading</td>
-    <td>High</td>
-  </tr>
-  <tr>
-    <td>A1</td>
-    <td>Commercial Operations</td>
-    <td>High</td>
-  </tr>
-  <tr>
-    <td>A2</td>
-    <td>Interval Trading</td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>A3</td>
-    <td>Arbitrage</td>
-    <td>Medium</td>
-  </tr>
-</table>
-
-Reserve Tier coins **must equal at least 34 percent** of total coin issuance
-
-<table>
-  <tr>
-    <td>Coin</td>
-    <td>Layer Description</td>
-    <td>Risk Profile</td>
-  </tr>
-  <tr>
-    <td>R</td>
-    <td>Precious metals</td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>R0</td>
-    <td>Long positions</td>
-    <td>Medium</td>
-  </tr>
-  <tr>
-    <td>R1</td>
-    <td>Staking Nodes</td>
-    <td>Medium</td>
-    </tr>
-  <tr>
-    <td>R2</td>
-    <td>Fiat Reserves</td>
-    <td>Very Low</td>
-  </tr>
-</table>
-
-
-### Liquidity Tier 
-
-<table>
-  <tr>
-    <td>Coin</td>
-    <td>Description</td>
-    <td>Risk Profile</td>
-  </tr>
-  <tr>
-    <td>LX</td>
-    <td>Stable-coin specific to this fund, and redeemable for the above tiers. Gets its value from the sum total basket average. Value shown in Lisa/XDR.</td>
-    <td>Risk average of entire fund</td>
-  </tr>
-  <tr>
-    <td>Lisa</td>
-    <td>Stable-coin usable across all the L-chain which connects all funds in this VMF instance. Value pegged to XDR.</td>
-    <td>Low</td>
-  </tr>
-</table>
+Whatever business activities are creating your profits, rank them by riskiness into one of the categories in the tables laid out in the sections above. Then decide what percentage of your total funding will go to each activity; that is, what mixture of coins you'd like to issue. Some people may only issue one tier of coins, while others will be active in all six tiers.
 
 ####Note on fungibility
 Funds cannot exchange A0, A1, A2, R, R0, and R1 coins with one another. Because each fund's chain is not connected to any other, the only way that funds may do business is by trading their LX instrument for a Lisa coin, and then doing a transacton in Lisa. The Lisa coin is the lingua franca in a given VMF platform network, and its value is pegged to the XDR; thus 100 lisa = 100 xdr. Central banks may not do business with one another except by trading with each other in underlying assets. **Lisa chains are not connected.**
@@ -316,22 +317,15 @@ Modern fiat instruments, and the banks that hold them, make for poor long-term s
 ####The 250 entity limit
 If 250 investors sounds like a tiny bank or fund by present day standards, consider that the account-to-human ratio is about to reverse. That is to say: today, banks require *at least* one account per customer. In fact, many customers have several accounts with one bank (savings, checking, money market, business checking, and so on) which all represent different lines of business for the bank: different departments. In a VMF, it's much more likely that family members (parents and kids; spouses; entire families) will all operate inside the same VMF for simplicty's sake (ie., they can pay each other in the same Lisa coin). 
 
-Consider also that, for legal reasons, initial deposits into a Fund must be made in ETH, which most people are not carrying around each day. One family member or friend can give a relative USD to invest in one big ETH purchase without fear they won't see their money come back -- simply by creating a smart contract denominated in Lisa coins in which the relative pays them out an evenly-divisble balance over `i` payments in a loop where `p` equals the principle `for (i = 0; i > (p / i); i--)`. Such contracts will be available off the shelf in the mobile wallet app. This one is called an "annuity contract."
+Consider also that, for legal reasons, initial deposits into a Fund must be made in ETH, which most people are not carrying around each day. One family member or friend can give a relative USD to invest in one big ETH purchase without fear they won't see their money come back -- simply by creating a smart contract denominated in Lisa coins in which the relative pays them out an evenly-divisble balance over `i` payments in a loop where `p` equals the principle `for (i = 0; i > (p / i); i--);`. Such contracts will be available off the shelf in the mobile wallet app. This one is called an "annuity contract." For more common contracts, see the Member-Investor node spec document in this Github project.
 
 With such a smart contract, family trust issues are removed, and they can each funnel dollars to the Fund Manager through the same "head of household" who buys the ETH outright. 
-
-#Flux Trade (built separately; launching end of September 2016)
-This open-source level 2 tool combines 10 crypto exchanges in one price ladder and order book to make day trading, interval trading, and accumulating long positions easy. Bonus: it's extra easy to get out of tight trades without slippage. But Flux Trade has a more important feature when it comes to the larger fund.
-
-**The Flux Meta Wallet**
-
-Flux Trade has a meta wallet based on Uphold Bank. It keeps reserves safely there, while conducting limited market operations, specifically arbitrage (automated) and trading (manual, by humans). This Meta Wallet serves as the source for price data that member-investors see in their mobile app. As Flux Trade develops, we will add other equities and FX trading to the tool so that market makers of all types can operate funds in our network.
 
 #Licensing Fees
 Generally speaking, the VMF project is shockingly cheap to deploy for everyone involved, even not considering the unspeakable waste of existing banks that serves as comparison. However, there are fees to maintain and further the development of this software, and to meagerly enrich its creators.
 
 In a given VMF, each Fund pays an annual tithing to the Central Bank to the tune of **0.009** percent per annum of a moving average of AUM **payable in ETH only.** This payment is remitted in 12 intallments, or monthly, each year. Payment is made manually by Fund Managers -- it is not auto-deducted.  
 
-For other VMFs licensing this software to operate as their own Central Banks, a licensing fee of **4.4** percent of their total fee haul per annum, to be paid in 12 installments and **also remitted in ETH.**
+For other VMFs licensing this software to operate as their own Central Banks, a licensing fee of **4.4** percent of their total fee haul per annum, to be paid to Iterative Instinct (the Ur-bank) in 12 installments and **also remitted in ETH.**
 
-Flux Trade introduces a **0.01** percent fee per trade, per exchange.
+Fund Managers and Central Bankers may use our Flux Trade level 2 tool to manage their positions. This tool introduces a **0.01** percent fee per trade, per exchange.
